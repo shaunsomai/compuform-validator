@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "turffontein_2026_05_07",
+      "label": "TURFFONTEIN INSIDE - 7 May 2026",
+      "pdf": "TURFFONTEIN@2026.05.07.pdf",
+      "json_path": "outputs/turffontein_2026_05_07/turffontein_2026_05_07_extraction.json"
+    },
+    {
+      "id": "fairview_2026_05_08",
+      "label": "FAIRVIEW - 8 May 2026",
+      "pdf": "FAIRVIEW@2026.05.08.pdf",
+      "json_path": "outputs/fairview_2026_05_08/fairview_2026_05_08_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_greyville_2026_05_09",
+      "label": "HOLLYWOODBETS GREYVILLE - 9 May 2026",
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.05.09.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_05_09/hollywoodbets_greyville_2026_05_09_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_greyville_2026_05_13",
+      "label": "HOLLYWOODBETS GREYVILLE - 13 May 2026",
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.05.13.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_05_13/hollywoodbets_greyville_2026_05_13_extraction.json"
+    },
+    {
+      "id": "vaal_2026_05_14",
+      "label": "VAAL CLASSIC - 14 May 2026",
+      "pdf": "VAAL@2026.05.14.pdf",
+      "json_path": "outputs/vaal_2026_05_14/vaal_2026_05_14_extraction.json"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computaform Extraction Validator</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Computaform PDF extraction</p>
+          <h1>Validation workspace</h1>
+        </div>
+        <div class="top-actions">
+          <label class="control">
+            <span>Meeting</span>
+            <select id="sourceSelect"></select>
+          </label>
+          <button id="reloadButton" type="button">Reload data</button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <nav class="sidebar" aria-label="Validation sections">
+          <button class="nav-item is-active" data-section="overview" type="button">Overview</button>
+          <button class="nav-item" data-section="races" type="button">Races</button>
+          <button class="nav-item" data-section="runners" type="button">Runners</button>
+          <button class="nav-item" data-section="ratings" type="button">Ratings</button>
+          <button class="nav-item" data-section="betting" type="button">Betting</button>
+          <button class="nav-item" data-section="past" type="button">Past runs</button>
+          <button class="nav-item" data-section="collateral" type="button">Collateral</button>
+          <button class="nav-item" data-section="validation" type="button">Validation</button>
+          <button class="nav-item" data-section="raw" type="button">Raw JSON</button>
+        </nav>
+
+        <main class="workspace">
+          <section id="status" class="status" aria-live="polite">Loading extraction data...</section>
+
+          <section class="filterbar" aria-label="Data filters">
+            <label class="control">
+              <span>Race</span>
+              <select id="raceSelect"></select>
+            </label>
+            <label class="control">
+              <span>Runner</span>
+              <select id="runnerSelect"></select>
+            </label>
+            <label class="control search-control">
+              <span>Search</span>
+              <input id="searchInput" type="search" placeholder="Horse, jockey, trainer, note">
+            </label>
+            <label class="control">
+              <span>JSON scope</span>
+              <select id="jsonScopeSelect">
+                <option value="current">Current selection</option>
+                <option value="full">Full extraction</option>
+                <option value="meeting">Meeting only</option>
+                <option value="validation">Validation only</option>
+              </select>
+            </label>
+          </section>
+
+          <section id="stats" class="stats-grid" aria-label="Extraction metrics"></section>
+          <section id="content" class="content-area"></section>
+        </main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
