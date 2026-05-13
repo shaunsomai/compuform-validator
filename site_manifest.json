@@ -29,6 +29,36 @@
       "label": "VAAL CLASSIC - 14 May 2026",
       "pdf": "VAAL@2026.05.14.pdf",
       "json_path": "outputs/vaal_2026_05_14/vaal_2026_05_14_extraction.json"
+    },
+    {
+      "id": "fairview_2026_05_15",
+      "label": "FAIRVIEW - 15 May 2026",
+      "pdf": "FAIRVIEW@2026.05.15.pdf",
+      "json_path": "outputs/fairview_2026_05_15/fairview_2026_05_15_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_kenilworth_2026_05_16",
+      "label": "HOLLYWOODBETS KENILWORTH SUMMER - 16 May 2026",
+      "pdf": "HOLLYWOODBETS KENILWORTH@2026.05.16.pdf",
+      "json_path": "outputs/hollywoodbets_kenilworth_2026_05_16/hollywoodbets_kenilworth_2026_05_16_extraction.json"
+    },
+    {
+      "id": "turffontein_2026_05_16",
+      "label": "TURFFONTEIN STANDSIDE - 16 May 2026",
+      "pdf": "TURFFONTEIN@2026.05.16.pdf",
+      "json_path": "outputs/turffontein_2026_05_16/turffontein_2026_05_16_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_scottsville_2026_05_17",
+      "label": "HOLLYWOODBETS SCOTTSVILLE - 17 May 2026",
+      "pdf": "HOLLYWOODBETS SCOTTSVILLE@2026.05.17.pdf",
+      "json_path": "outputs/hollywoodbets_scottsville_2026_05_17/hollywoodbets_scottsville_2026_05_17_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_kenilworth_2026_05_19",
+      "label": "HOLLYWOODBETS KENILWORTH SUMMER - 19 May 2026",
+      "pdf": "HOLLYWOODBETS KENILWORTH@2026.05.19.pdf",
+      "json_path": "outputs/hollywoodbets_kenilworth_2026_05_19/hollywoodbets_kenilworth_2026_05_19_extraction.json"
     }
   ]
 }
