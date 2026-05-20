@@ -59,6 +59,36 @@
       "label": "HOLLYWOODBETS KENILWORTH SUMMER - 19 May 2026",
       "pdf": "HOLLYWOODBETS KENILWORTH@2026.05.19.pdf",
       "json_path": "outputs/hollywoodbets_kenilworth_2026_05_19/hollywoodbets_kenilworth_2026_05_19_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_greyville_2026_05_20",
+      "label": "HOLLYWOODBETS GREYVILLE - 20 May 2026",
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.05.20.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_05_20/hollywoodbets_greyville_2026_05_20_extraction.json"
+    },
+    {
+      "id": "vaal_2026_05_21",
+      "label": "VAAL - 21 May 2026",
+      "pdf": "VAAL@2026.05.21.pdf",
+      "json_path": "outputs/vaal_2026_05_21/vaal_2026_05_21_extraction.json"
+    },
+    {
+      "id": "fairview_2026_05_22",
+      "label": "FAIRVIEW TURF - 22 May 2026",
+      "pdf": "FAIRVIEW@2026.05.22.pdf",
+      "json_path": "outputs/fairview_2026_05_22/fairview_2026_05_22_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_scottsville_2026_05_23",
+      "label": "HOLLYWOODBETS SCOTTSVILLE - 23 May 2026",
+      "pdf": "HOLLYWOODBETS SCOTTSVILLE@2026.05.23.pdf",
+      "json_path": "outputs/hollywoodbets_scottsville_2026_05_23/hollywoodbets_scottsville_2026_05_23_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_kenilworth_2026_05_24",
+      "label": "HOLLYWOODBETS KENILWORTH WINTER - 24 May 2026",
+      "pdf": "HOLLYWOODBETS KENILWORTH@2026.05.24.pdf",
+      "json_path": "outputs/hollywoodbets_kenilworth_2026_05_24/hollywoodbets_kenilworth_2026_05_24_extraction.json"
     }
   ]
 }

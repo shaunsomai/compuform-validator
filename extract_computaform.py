@@ -375,6 +375,8 @@ def parse_race_header(page: dict[str, Any]) -> dict[str, str]:
         race["distance"] = first_match(r"\b(\d{3,4}m)\b", text)
     if not race["stake"]:
         race["stake"] = first_match(r"Gross Stake:\s*(R[\d,]+)", text)
+    if not race["race_ref"]:
+        race["race_ref"] = first_match(r"Race Ref:\s*(\d+)", text)
     if not race["distance_category"]:
         race["distance_category"] = first_match(r"DC:\s*([^\n]+)", text)
     if not race["wfa"]:
@@ -882,8 +884,27 @@ def is_weight_token(token: str) -> bool:
     return bool(re.fullmatch(r"\d+(?:\.\d+)?(?:[-+]\d+\.\d+)?", token))
 
 
+def is_distance_token(token: str) -> bool:
+    match = re.fullmatch(r"(\d{3,4})([A-Za-z])?", token)
+    if not match:
+        return False
+    metres = int(match.group(1))
+    return 600 <= metres <= 4000
+
+
 def is_time_token(token: str) -> bool:
-    return bool(re.fullmatch(r"\d{2,3}\.\d{2}", token))
+    return token == "NTT" or bool(re.fullmatch(r"\d{2,3}\.\d{2}", token))
+
+
+def is_shoes_headgear_token(token: str) -> bool:
+    return bool(re.fullmatch(r"[AB]{1,2}t?|[ABH]", token))
+
+
+def split_embedded_winner_weight(token: str) -> tuple[str, str] | None:
+    match = re.match(r"^(?P<name>.*?[A-Za-z][A-Za-z/.'â€™-]*?)(?P<weight>\d+(?:\.\d+)?)$", token)
+    if not match:
+        return None
+    return clean_text(match.group("name")), match.group("weight")
 
 
 def split_next_start_and_comment(tokens: list[str]) -> tuple[str, str]:
@@ -897,6 +918,25 @@ def split_next_start_and_comment(tokens: list[str]) -> tuple[str, str]:
     comment_start = clean_text(match.group(2).replace(".", " "))
     comment = clean_text(" ".join([comment_start, *tokens[1:]]))
     return next_start, comment
+
+
+def assign_past_run_winner_tail(row: dict[str, str], tokens: list[str], winner_weight_idx: int) -> None:
+    row["winner_weight"] = tokens[winner_weight_idx]
+    row["winner_time"] = tokens[winner_weight_idx + 1] if winner_weight_idx + 1 < len(tokens) else ""
+    row["final_400"] = tokens[winner_weight_idx + 2] if winner_weight_idx + 2 < len(tokens) else ""
+    row["finish_rank"] = tokens[winner_weight_idx + 3] if winner_weight_idx + 3 < len(tokens) else ""
+    row["horse_adjusted_vs_average"] = tokens[winner_weight_idx + 4] if winner_weight_idx + 4 < len(tokens) else ""
+    row["adjusted_time_per_metre"] = tokens[winner_weight_idx + 5] if winner_weight_idx + 5 < len(tokens) else ""
+    speed_idx = winner_weight_idx + 6
+    next_start_idx = winner_weight_idx + 7
+    if speed_idx < len(tokens):
+        if re.match(r"^\d+/\d+", tokens[speed_idx]):
+            next_start_idx = speed_idx
+        else:
+            row["speed_rating"] = tokens[speed_idx]
+    next_start, comment = split_next_start_and_comment(tokens[next_start_idx:])
+    row["next_start_winners"] = next_start
+    row["comment"] = comment
 
 
 def parse_past_run_row(line: str, race_number: str, horse_number: str, horse_name: str) -> dict[str, str]:
@@ -919,18 +959,17 @@ def parse_past_run_row(line: str, race_number: str, horse_number: str, horse_nam
     row["race_class"] = tokens[4] if len(tokens) > 4 else ""
     row["stake"] = tokens[5] if len(tokens) > 5 else ""
     row["race_class_stake"] = clean_text(" ".join([row["race_class"], row["stake"]]))
-    row["average_merit_rating"] = tokens[6] if len(tokens) > 6 else ""
-    row["distance"] = tokens[7] if len(tokens) > 7 else ""
+    idx = 6
+    if idx < len(tokens) and not is_distance_token(tokens[idx]):
+        row["average_merit_rating"] = tokens[idx]
+        idx += 1
+    if idx < len(tokens):
+        row["distance"] = tokens[idx]
+        idx += 1
     distance_match = re.match(r"^(\d+)([A-Za-z])?$", row["distance"])
     if distance_match:
         row["distance_metres"] = distance_match.group(1)
         row["straight_or_turn"] = distance_match.group(2) or ""
-    row["shoes_headgear"] = tokens[8] if len(tokens) > 8 else ""
-
-    idx = 9
-    if idx < len(tokens) and re.fullmatch(r"\d+|--|X", tokens[idx]):
-        row["official_merit_rating"] = tokens[idx]
-        idx += 1
 
     weight_idx = -1
     for i in range(idx, len(tokens) - 1):
@@ -940,7 +979,14 @@ def parse_past_run_row(line: str, race_number: str, horse_number: str, horse_nam
     if weight_idx == -1:
         return row
 
-    row["jockey"] = clean_text(" ".join(tokens[idx:weight_idx]))
+    pre_weight = tokens[idx:weight_idx]
+    if pre_weight and is_shoes_headgear_token(pre_weight[0]) and (
+        len(pre_weight) >= 3 or (len(pre_weight) >= 2 and re.fullmatch(r"\d+|--|X", pre_weight[1]))
+    ):
+        row["shoes_headgear"] = pre_weight.pop(0)
+    if pre_weight and re.fullmatch(r"\d+|--|X", pre_weight[0]):
+        row["official_merit_rating"] = pre_weight.pop(0)
+    row["jockey"] = clean_text(" ".join(pre_weight))
     row["weight_allowance"] = tokens[weight_idx]
     row["draw_runners"] = tokens[weight_idx + 1]
     row["opening_betting"] = odds_to_slash(tokens[weight_idx + 2]) if weight_idx + 2 < len(tokens) else ""
@@ -966,21 +1012,20 @@ def parse_past_run_row(line: str, race_number: str, horse_number: str, horse_nam
             winner_weight_idx = i
             break
     if winner_weight_idx == -1:
+        for i in range(winner_start, len(tokens) - 1):
+            embedded = split_embedded_winner_weight(tokens[i])
+            if embedded and is_time_token(tokens[i + 1]):
+                winner_name, winner_weight = embedded
+                row["winner_or_second"] = clean_text(" ".join([*tokens[winner_start:i], winner_name]))
+                tokens[i] = winner_weight
+                assign_past_run_winner_tail(row, tokens, i)
+                return row
         if winner_start < len(tokens):
             row["winner_or_second"] = clean_text(" ".join(tokens[winner_start:]))
         return row
 
     row["winner_or_second"] = clean_text(" ".join(tokens[winner_start:winner_weight_idx]))
-    row["winner_weight"] = tokens[winner_weight_idx]
-    row["winner_time"] = tokens[winner_weight_idx + 1] if winner_weight_idx + 1 < len(tokens) else ""
-    row["final_400"] = tokens[winner_weight_idx + 2] if winner_weight_idx + 2 < len(tokens) else ""
-    row["finish_rank"] = tokens[winner_weight_idx + 3] if winner_weight_idx + 3 < len(tokens) else ""
-    row["horse_adjusted_vs_average"] = tokens[winner_weight_idx + 4] if winner_weight_idx + 4 < len(tokens) else ""
-    row["adjusted_time_per_metre"] = tokens[winner_weight_idx + 5] if winner_weight_idx + 5 < len(tokens) else ""
-    row["speed_rating"] = tokens[winner_weight_idx + 6] if winner_weight_idx + 6 < len(tokens) else ""
-    next_start, comment = split_next_start_and_comment(tokens[winner_weight_idx + 7 :])
-    row["next_start_winners"] = next_start
-    row["comment"] = comment
+    assign_past_run_winner_tail(row, tokens, winner_weight_idx)
     return row
 
 
@@ -1268,15 +1313,34 @@ def validate(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
                         f"{bucket_name} item {item['horse_number']} {item['horse_name']} does not match Race {race_number} runners."
                     )
 
-    validation["possible_ocr_errors"].append(
-        "The PDF repeatedly emitted U+FFFD in numeric fields; extractor converted those to decimal points for weights, times, percentages, and ratings."
-    )
-    validation["warnings"].append(
-        "Past-performance rows are preserved as raw rows with light date/course parsing; dense columns should be reviewed before automated modelling."
-    )
-    validation["warnings"].append(
-        "Collateral formlines are attached when the line begins with a known runner name; wrapped names are only joined where obvious."
-    )
+    replacement_count = sum(page.get("text_raw", "").count("\ufffd") for page in pages)
+    if replacement_count:
+        validation["possible_ocr_errors"].append(
+            f"The PDF emitted U+FFFD {replacement_count} times; extractor converted those glyphs to decimal points in cleaned text."
+        )
+
+    past_rows = [past_run for runner in data["runners"] for past_run in runner["past_runs"]]
+    past_missing_core = [
+        past_run
+        for past_run in past_rows
+        if not past_run.get("date") or not past_run.get("course") or not past_run.get("weight_allowance") or not past_run.get("draw_runners")
+    ]
+    collateral_rows = [row for runner in data["runners"] for row in runner["collateral_formlines"]]
+    collateral_missing_date = [row for row in collateral_rows if not row.get("date")]
+    validation["quality_checks"] = {
+        "past_performance_rows": str(len(past_rows)),
+        "past_performance_rows_missing_core_fields": str(len(past_missing_core)),
+        "collateral_formline_rows": str(len(collateral_rows)),
+        "collateral_formline_rows_missing_date": str(len(collateral_missing_date)),
+    }
+    if past_missing_core:
+        validation["warnings"].append(
+            f"Past-performance parse quality: {len(past_missing_core)} of {len(past_rows)} rows are missing date, course, weight, or draw/runners."
+        )
+    if collateral_missing_date:
+        validation["warnings"].append(
+            f"Collateral formlines parse quality: {len(collateral_missing_date)} of {len(collateral_rows)} rows are missing a parsed date."
+        )
 
 
 def rows_for_spreadsheets(data: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
