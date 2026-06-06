@@ -89,6 +89,42 @@
       "label": "HOLLYWOODBETS KENILWORTH WINTER - 24 May 2026",
       "pdf": "HOLLYWOODBETS KENILWORTH@2026.05.24.pdf",
       "json_path": "outputs/hollywoodbets_kenilworth_2026_05_24/hollywoodbets_kenilworth_2026_05_24_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_greyville_2026_06_06",
+      "label": "HOLLYWOODBETS GREYVILLE POLYTRACK - 6 June 2026",
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.06.06.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_06_06/hollywoodbets_greyville_2026_06_06_extraction.json"
+    },
+    {
+      "id": "turffontein_2026_06_07",
+      "label": "TURFFONTEIN STANDSIDE - 7 June 2026",
+      "pdf": "TURFFONTEIN@2026.06.07.pdf",
+      "json_path": "outputs/turffontein_2026_06_07/turffontein_2026_06_07_extraction.json"
+    },
+    {
+      "id": "fairview_2026_06_08",
+      "label": "FAIRVIEW - 8 June 2026",
+      "pdf": "FAIRVIEW@2026.06.08.pdf",
+      "json_path": "outputs/fairview_2026_06_08/fairview_2026_06_08_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_kenilworth_2026_06_09",
+      "label": "HOLLYWOODBETS KENILWORTH WINTER - 9 June 2026",
+      "pdf": "HOLLYWOODBETS KENILWORTH@2026.06.09.pdf",
+      "json_path": "outputs/hollywoodbets_kenilworth_2026_06_09/hollywoodbets_kenilworth_2026_06_09_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_greyville_2026_06_10",
+      "label": "HOLLYWOODBETS GREYVILLE - 10 June 2026",
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.06.10.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_06_10/hollywoodbets_greyville_2026_06_10_extraction.json"
+    },
+    {
+      "id": "turffontein_2026_06_11",
+      "label": "TURFFONTEIN INSIDE - 11 June 2026",
+      "pdf": "TURFFONTEIN@2026.06.11.pdf",
+      "json_path": "outputs/turffontein_2026_06_11/turffontein_2026_06_11_extraction.json"
     }
   ]
 }
