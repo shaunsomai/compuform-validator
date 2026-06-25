@@ -334,6 +334,7 @@ function renderRunnerDetail(runner) {
         ${keyValueTable(runner.breeding)}
       </section>
     </div>
+    ${runner.derived_exposure ? renderDerivedExposure(runner.derived_exposure) : ""}
     <h3>Past Runs</h3>
     ${table(runner.past_runs, pastRunColumns())}
     <h3>Collateral Formlines</h3>
@@ -342,6 +343,37 @@ function renderRunnerDetail(runner) {
       ["course", "Course"],
       ["raw_text", "Raw row"],
     ])}
+  `;
+}
+
+function renderDerivedExposure(exposure) {
+  const summaryRows = [
+    ["Method", exposure.method],
+    ["Greyville poly starts", exposure.greyville_poly_starts_grp],
+    ["Greyville turf starts", exposure.greyville_turf_starts_gry],
+    ["Greyville total starts", exposure.greyville_total_starts],
+    ["All poly starts", exposure.poly_starts_all_known_codes],
+    ["All turf starts", exposure.turf_starts_all_known_codes],
+    ["Known date/course pairs", exposure.known_date_course_pairs],
+    ["Current race distance", exposure.current_race_distance],
+    ["Distance-token matches", exposure.current_distance_token_matches],
+    ["C&D alignment", exposure.course_and_distance_alignment],
+  ].map(([label, value]) => ({ label, value }));
+  const courseRows = Object.entries(exposure.course_code_counts || {}).map(([course, starts]) => ({ course, starts }));
+  const surfaceRows = Object.entries(exposure.surface_counts || {}).map(([surface, starts]) => ({ surface, starts }));
+  return `
+    <h3>Derived Course/Surface Exposure</h3>
+    ${table(summaryRows, [["label", "Field"], ["value", "Value"]])}
+    <div class="split-grid">
+      <section>
+        <h3>Course Codes</h3>
+        ${table(courseRows, [["course", "Code"], ["starts", "Starts"]])}
+      </section>
+      <section>
+        <h3>Surface Counts</h3>
+        ${table(surfaceRows, [["surface", "Surface"], ["starts", "Starts"]])}
+      </section>
+    </div>
   `;
 }
 
