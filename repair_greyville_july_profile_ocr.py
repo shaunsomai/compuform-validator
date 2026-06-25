@@ -212,6 +212,7 @@ def fix_date_token(value: str) -> str:
     if not value:
         return ""
     value = value.replace("l", "1").replace("I", "1")
+    value = re.sub(r"Ju1", "Jul", value, flags=re.I)
     value = re.sub(r"^([0-3]?\d)0ct", r"\1Oct", value, flags=re.I)
     value = re.sub(r"^([0-3]?\d)0c", r"\1Oc", value, flags=re.I)
     return value
@@ -221,8 +222,13 @@ def parse_date_cell(value: str) -> dict[str, str]:
     parts = value.split()
     if not parts:
         return {"date_marker": "", "date": "", "course": "", "going": "", "raw_course": ""}
-    raw_date = parts[0]
-    marker = ""
+    if len(parts) >= 2 and re.fullmatch(r"[a-z]", parts[0]):
+        marker = parts[0]
+        raw_date = parts[1]
+        parts = [raw_date] + parts[2:]
+    else:
+        raw_date = parts[0]
+        marker = ""
     if len(raw_date) > 1 and raw_date[0].islower():
         marker = raw_date[0]
         raw_date = raw_date[1:]
@@ -238,15 +244,17 @@ def parse_date_cell(value: str) -> dict[str, str]:
 
 
 def parse_dist_sh(value: str) -> tuple[str, str, str]:
-    match = re.match(r"(?P<dist>\d{3,4})(?P<turn>[A-Za-z])?\s*(?P<rest>.*)$", value or "")
+    value = norm_text(value)
+    match = re.match(r"(?P<dist>[0-9IOl]{3,4})(?P<turn>[A-Za-z])?\s*(?P<rest>.*)$", value or "")
     if not match:
         return "", "", value
+    distance = match.group("dist").replace("I", "1").replace("l", "1").replace("O", "0")
     turn = (match.group("turn") or "").upper()
     rest = norm_text(match.group("rest") or "")
     if turn not in {"S", "L", "R"}:
         rest = norm_text((turn + " " + rest).strip())
         turn = ""
-    return match.group("dist"), turn, rest
+    return distance, turn, rest
 
 
 def parse_mr_jockey(value: str) -> tuple[str, str]:
@@ -455,7 +463,7 @@ def parse_past_rows(
             continue
         if not (45 <= x <= 105):
             continue
-        if re.match(r"^[a-zI0-9O]{0,3}[0-3IilO]?\d[A-Za-z0-9]{3,5}\s+[A-Za-z0-9]{2,4}", text):
+        if re.match(r"^(?:[a-z]\s+)?[a-zI0-9O]{0,3}[0-3IilO]?\d[A-Za-z0-9]{3,5}\s+[A-Za-z0-9]{2,4}", text):
             date_lines.append(line)
     date_lines.sort(key=lambda line: float(line["y"]))
 
@@ -548,7 +556,7 @@ def detect_cards(data: dict[str, Any], pages: dict[str, Any]) -> dict[tuple[str,
                 text = norm_text(line["text"]).upper()
                 x = float(line["x"])
                 y = float(line["y"])
-                if x > 260 or y < min_y:
+                if not (135 <= x <= 185) or y < min_y:
                     continue
                 match = start_pattern.match(text)
                 if not match:

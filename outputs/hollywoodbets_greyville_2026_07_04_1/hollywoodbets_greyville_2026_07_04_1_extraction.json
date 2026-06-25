@@ -2508,6 +2508,45 @@
           "race_number": "1",
           "horse_number": "3",
           "horse_name": "PLACE OF PRACTICE",
+          "date_marker": "g",
+          "date": "15Feb26",
+          "course": "SCT",
+          "going": "Y",
+          "raw_course": "SCT",
+          "ref": "387",
+          "race_class_stake": "MdnmG 120k",
+          "average_merit_rating": "69",
+          "distance": "1200",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "85",
+          "jockey": "SVeaIe",
+          "weight_allowance": "60",
+          "draw_runners": "1-8",
+          "opening_betting": "2-1",
+          "starting_price": "9-4",
+          "position_800m": "4",
+          "lengths_800m": "15",
+          "position_400m": "625",
+          "lengths_400m": "",
+          "finish_position": "6 15",
+          "finish_length": "70",
+          "winner_or_second": "Best0f All",
+          "winner_weight": "60",
+          "winner_time": "6901",
+          "final_400": "25.8",
+          "finish_rank": "5",
+          "horse_adjusted_vs_average": "26",
+          "adjusted_time_per_metre": "06033",
+          "speed_rating": "7",
+          "next_start_winners": "1/7",
+          "comment": ".....up there•weaened",
+          "raw_text": "g 15Feb26 SCT Y | 387 MdnmG 120k | 69 | 1200S AB | 85 SVeaIe | 60 | 1-8 | 2-1 | 9-4 | 4 15 | 625 | 6 15 | 70 Best0f All 60 | 6901 25.8 | 5 | 26 06033 | 7 | 1/7 .....up there•weaened"
+        },
+        {
+          "race_number": "1",
+          "horse_number": "3",
+          "horse_name": "PLACE OF PRACTICE",
           "date_marker": "",
           "date": "22Mar26",
           "course": "GRY",
@@ -2600,6 +2639,10 @@
             "course": "GRY"
           },
           {
+            "date": "15Feb26",
+            "course": "SCT"
+          },
+          {
             "date": "22Mar26",
             "course": "GRY"
           },
@@ -2610,10 +2653,11 @@
         ],
         "course_code_counts": {
           "GRY": 3,
-          "GRP": 2
+          "GRP": 2,
+          "SCT": 1
         },
         "surface_counts": {
-          "turf": 3,
+          "turf": 4,
           "poly": 2
         },
         "venue_counts": {
@@ -2623,8 +2667,8 @@
         "greyville_turf_starts_gry": "3",
         "greyville_total_starts": "5",
         "poly_starts_all_known_codes": "2",
-        "turf_starts_all_known_codes": "3",
-        "known_date_course_pairs": "5",
+        "turf_starts_all_known_codes": "4",
+        "known_date_course_pairs": "6",
         "current_race_distance": "1600m",
         "current_distance_token_matches": "1",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -3221,7 +3265,7 @@
           "horse_number": "5",
           "horse_name": "ACT OF GRACE",
           "date_marker": "",
-          "date": "16Ju125",
+          "date": "16Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -3577,7 +3621,7 @@
             "course": "GRY"
           },
           {
-            "date": "16Ju125",
+            "date": "16Jul25",
             "course": "GRP"
           },
           {
@@ -3711,7 +3755,7 @@
           "horse_number": "6",
           "horse_name": "NOTABLE",
           "date_marker": "",
-          "date": "31Ju124",
+          "date": "31Jul24",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -3945,7 +3989,7 @@
           "horse_number": "6",
           "horse_name": "NOTABLE",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRPn",
@@ -4063,7 +4107,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "31Ju124",
+            "date": "31Jul24",
             "course": "GRP"
           },
           {
@@ -4087,7 +4131,7 @@
             "course": "GRP"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRP"
           },
           {
@@ -4944,7 +4988,7 @@
           "horse_number": "9",
           "horse_name": "UNITED FRONT",
           "date_marker": "",
-          "date": "15Ju125",
+          "date": "15Jul25",
           "course": "KENO",
           "going": "H",
           "raw_course": "KENo",
@@ -5218,7 +5262,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "15Ju125",
+            "date": "15Jul25",
             "course": "KENO"
           },
           {
@@ -5334,6 +5378,45 @@
         "norm": "0-0-0-0-0"
       },
       "past_runs": [
+        {
+          "race_number": "1",
+          "horse_number": "10",
+          "horse_name": "SOMMERSTERN",
+          "date_marker": "g",
+          "date": "13Aug25",
+          "course": "KEN",
+          "going": "S",
+          "raw_course": "KEN",
+          "ref": "2",
+          "race_class_stake": "MdnmG 110k",
+          "average_merit_rating": "80",
+          "distance": "1200",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
+          "official_merit_rating": "",
+          "jockey": "C Little",
+          "weight_allowance": "60",
+          "draw_runners": "7-10",
+          "opening_betting": "16-1",
+          "starting_price": "33-1",
+          "position_800m": "10",
+          "lengths_800m": "7.1",
+          "position_400m": "10",
+          "lengths_400m": "",
+          "finish_position": "5",
+          "finish_length": "8.90",
+          "winner_or_second": "Pomp It Up",
+          "winner_weight": "58",
+          "winner_time": "74.60",
+          "final_400": "25.4",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": "-1",
+          "adjusted_time_per_metre": "7 .06220",
+          "speed_rating": "25",
+          "next_start_winners": "2/9....",
+          "comment": "Sbw • passed some",
+          "raw_text": "g 13Aug25 KEN s | 2 MdnmG 110k | 80 | 1200S A | C Little | 60 | 7-10 | 16-1 | 33-1 | 10 7.1 | 10 | 5 | 8.90 Pomp It Up 58 | 74.60 25.4 | 2 | -1 7 .06220 | 25 | 2/9....Sbw • passed some"
+        },
         {
           "race_number": "1",
           "horse_number": "10",
@@ -5535,6 +5618,10 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "13Aug25",
+            "course": "KEN"
+          },
+          {
             "date": "30Aug25",
             "course": "DBV"
           },
@@ -5556,20 +5643,20 @@
           }
         ],
         "course_code_counts": {
+          "KEN": 2,
           "DBV": 3,
-          "KEN": 1,
           "SCI": 1
         },
         "surface_counts": {
-          "turf": 5
+          "turf": 6
         },
         "venue_counts": {},
         "greyville_poly_starts_grp": "0",
         "greyville_turf_starts_gry": "0",
         "greyville_total_starts": "0",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "5",
-        "known_date_course_pairs": "5",
+        "turf_starts_all_known_codes": "6",
+        "known_date_course_pairs": "6",
         "current_race_distance": "1600m",
         "current_distance_token_matches": "2",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -5725,7 +5812,7 @@
           "horse_number": "11",
           "horse_name": "MAGMA MAGIC",
           "date_marker": "",
-          "date": "16Ju125",
+          "date": "16Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -6046,7 +6133,7 @@
             "course": "GRP"
           },
           {
-            "date": "16Ju125",
+            "date": "16Jul25",
             "course": "GRP"
           },
           {
@@ -7316,7 +7403,7 @@
           "horse_number": "15",
           "horse_name": "STAR OF THE FUTURE",
           "date_marker": "",
-          "date": "13Ju125",
+          "date": "13Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -7594,7 +7681,7 @@
             "course": "GRP"
           },
           {
-            "date": "13Ju125",
+            "date": "13Jul25",
             "course": "GRP"
           },
           {
@@ -8763,7 +8850,7 @@
           "horse_number": "3",
           "horse_name": "PLEASE BE TRUE",
           "date_marker": "",
-          "date": "26Ju125",
+          "date": "26Jul25",
           "course": "KENO",
           "going": "S",
           "raw_course": "KENo",
@@ -9002,7 +9089,7 @@
             "course": "KENC"
           },
           {
-            "date": "26Ju125",
+            "date": "26Jul25",
             "course": "KENO"
           },
           {
@@ -9639,7 +9726,7 @@
           "horse_number": "5",
           "horse_name": "BRUH",
           "date_marker": "",
-          "date": "09Ju125",
+          "date": "09Jul25",
           "course": "SCI",
           "going": "G",
           "raw_course": "SCI",
@@ -9678,7 +9765,7 @@
           "horse_number": "5",
           "horse_name": "BRUH",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -9921,11 +10008,11 @@
             "course": "GRP"
           },
           {
-            "date": "09Ju125",
+            "date": "09Jul25",
             "course": "SCI"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -10316,6 +10403,45 @@
           "race_number": "2",
           "horse_number": "6",
           "horse_name": "GREEN GLOW",
+          "date_marker": "g",
+          "date": "24Apr26",
+          "course": "GRY",
+          "going": "Y",
+          "raw_course": "GRYn",
+          "ref": "536",
+          "race_class_stake": "C13mB 165k",
+          "average_merit_rating": "90",
+          "distance": "1600",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
+          "official_merit_rating": "92",
+          "jockey": "S Moodley",
+          "weight_allowance": "55",
+          "draw_runners": "5-10",
+          "opening_betting": "",
+          "starting_price": "14-1",
+          "position_800m": "8",
+          "lengths_800m": "6.2",
+          "position_400m": "950",
+          "lengths_400m": "",
+          "finish_position": "3",
+          "finish_length": "0.65",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "100.01",
+          "final_400": "23.2",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": "-1",
+          "adjusted_time_per_metre": "3 .06129",
+          "speed_rating": "34",
+          "next_start_winners": "0/8........",
+          "comment": "....Quickened well",
+          "raw_text": "g 24Apr26 GRYn Y | 536 C13mB 165k | 90 | 1600R A | 92 S Moodley | 55 | 5-10 | 14-1 | 8 6.2 | 950 | 3 | 0.65 | 100.01 23.2 | -1 3 .06129 | 34 | 0/8............Quickened well"
+        },
+        {
+          "race_number": "2",
+          "horse_number": "6",
+          "horse_name": "GREEN GLOW",
           "date_marker": "",
           "date": "17May26",
           "course": "SCI",
@@ -10385,30 +10511,34 @@
             "course": "GRY"
           },
           {
+            "date": "24Apr26",
+            "course": "GRY"
+          },
+          {
             "date": "17May26",
             "course": "SCI"
           }
         ],
         "course_code_counts": {
           "SCI": 2,
-          "GRY": 3,
+          "GRY": 4,
           "GRP": 3
         },
         "surface_counts": {
-          "turf": 5,
+          "turf": 6,
           "poly": 3
         },
         "venue_counts": {
-          "greyville": 6
+          "greyville": 7
         },
         "greyville_poly_starts_grp": "3",
-        "greyville_turf_starts_gry": "3",
-        "greyville_total_starts": "6",
+        "greyville_turf_starts_gry": "4",
+        "greyville_total_starts": "7",
         "poly_starts_all_known_codes": "3",
-        "turf_starts_all_known_codes": "5",
-        "known_date_course_pairs": "8",
+        "turf_starts_all_known_codes": "6",
+        "known_date_course_pairs": "9",
         "current_race_distance": "1600m",
-        "current_distance_token_matches": "6",
+        "current_distance_token_matches": "7",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
       },
       "draw_source_note": ""
@@ -10965,6 +11095,45 @@
           "race_number": "2",
           "horse_number": "8",
           "horse_name": "ROYAL SWORD",
+          "date_marker": "g",
+          "date": "09Jul25",
+          "course": "SCT",
+          "going": "G",
+          "raw_course": "SCT",
+          "ref": "742",
+          "race_class_stake": "MdnmG 125k",
+          "average_merit_rating": "",
+          "distance": "1200",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
+          "official_merit_rating": "",
+          "jockey": "M Thackeray",
+          "weight_allowance": "57",
+          "draw_runners": "5-11",
+          "opening_betting": "25-1",
+          "starting_price": "100-1",
+          "position_800m": "9",
+          "lengths_800m": "2.6",
+          "position_400m": "9",
+          "lengths_400m": "44",
+          "finish_position": "8",
+          "finish_length": "9.70",
+          "winner_or_second": "Cardinal Chief",
+          "winner_weight": "57",
+          "winner_time": "69.59",
+          "final_400": "24.1",
+          "finish_rank": "8",
+          "horse_adjusted_vs_average": ".1",
+          "adjusted_time_per_metre": "6 .05933",
+          "speed_rating": "28",
+          "next_start_winners": "",
+          "comment": "...No show",
+          "raw_text": "g 09Ju125 SCT G | 742 MdnmG 125k | 1200S A | M Thackeray | 57 | 5-11 | 25-1 | 100-1 | 9 2.6 | 9 44 | 8 | 9.70 Cardinal Chief 57 | 69.59 24.1 | 8 | .1 6 .05933 | 28 | ...No show"
+        },
+        {
+          "race_number": "2",
+          "horse_number": "8",
+          "horse_name": "ROYAL SWORD",
           "date_marker": "",
           "date": "24Aug25",
           "course": "SCI",
@@ -11279,6 +11448,10 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "09Jul25",
+            "course": "SCT"
+          },
+          {
             "date": "24Aug25",
             "course": "SCI"
           },
@@ -11312,12 +11485,13 @@
           }
         ],
         "course_code_counts": {
+          "SCT": 1,
           "SCI": 2,
           "GRY": 2,
           "GRP": 4
         },
         "surface_counts": {
-          "turf": 4,
+          "turf": 5,
           "poly": 4
         },
         "venue_counts": {
@@ -11327,8 +11501,8 @@
         "greyville_turf_starts_gry": "2",
         "greyville_total_starts": "6",
         "poly_starts_all_known_codes": "4",
-        "turf_starts_all_known_codes": "4",
-        "known_date_course_pairs": "8",
+        "turf_starts_all_known_codes": "5",
+        "known_date_course_pairs": "9",
         "current_race_distance": "1600m",
         "current_distance_token_matches": "3",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -12889,7 +13063,7 @@
           "horse_number": "12",
           "horse_name": "SUNDANCE KID",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -12928,7 +13102,7 @@
           "horse_number": "12",
           "horse_name": "SUNDANCE KID",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -13210,11 +13384,11 @@
             "course": "GRP"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -13897,6 +14071,45 @@
           "race_number": "2",
           "horse_number": "14",
           "horse_name": "STATUS",
+          "date_marker": "g",
+          "date": "19Feb26",
+          "course": "TFI",
+          "going": "G",
+          "raw_course": "TFI",
+          "ref": "555",
+          "race_class_stake": "MdnmG 120k",
+          "average_merit_rating": "68",
+          "distance": "1600",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
+          "official_merit_rating": "",
+          "jockey": "C Habib",
+          "weight_allowance": "60",
+          "draw_runners": "8-10",
+          "opening_betting": "17-2",
+          "starting_price": "14-1",
+          "position_800m": "1",
+          "lengths_800m": "1.5",
+          "position_400m": "114",
+          "lengths_400m": "",
+          "finish_position": "1",
+          "finish_length": "1.50",
+          "winner_or_second": "*Top",
+          "winner_weight": "",
+          "winner_time": "99.33",
+          "final_400": "24.4",
+          "finish_rank": "5",
+          "horse_adjusted_vs_average": "+02",
+          "adjusted_time_per_metre": ".06159",
+          "speed_rating": "65",
+          "next_start_winners": "2/8",
+          "comment": "...Stubborn-kept on",
+          "raw_text": "g 19Feb26 TFI G | 555 MdnmG 120k | 68 | 1600R A | C Habib | 60 | 8-10 | 17-2 | 14-1 | 1 1.5 | 114 | 1 | 1.50 *Top | 99.33 24.4 | 5 | +02 .06159 | 65 | 2/8 ...Stubborn-kept on"
+        },
+        {
+          "race_number": "2",
+          "horse_number": "14",
+          "horse_name": "STATUS",
           "date_marker": "",
           "date": "19Mar26",
           "course": "TFI",
@@ -13942,26 +14155,30 @@
             "course": "VAC"
           },
           {
+            "date": "19Feb26",
+            "course": "TFI"
+          },
+          {
             "date": "19Mar26",
             "course": "TFI"
           }
         ],
         "course_code_counts": {
           "VAC": 1,
-          "TFI": 1
+          "TFI": 2
         },
         "surface_counts": {
-          "turf": 1
+          "turf": 2
         },
         "venue_counts": {},
         "greyville_poly_starts_grp": "0",
         "greyville_turf_starts_gry": "0",
         "greyville_total_starts": "0",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "1",
-        "known_date_course_pairs": "2",
+        "turf_starts_all_known_codes": "2",
+        "known_date_course_pairs": "3",
         "current_race_distance": "1600m",
-        "current_distance_token_matches": "0",
+        "current_distance_token_matches": "1",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
       },
       "draw_source_note": ""
@@ -14193,7 +14410,7 @@
           "horse_number": "1",
           "horse_name": "JOHNNY THE THIEF",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -14405,7 +14622,7 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -14513,6 +14730,45 @@
         "norm": ""
       },
       "past_runs": [
+        {
+          "race_number": "3",
+          "horse_number": "2",
+          "horse_name": "TINTIN",
+          "date_marker": "g",
+          "date": "17Apr25",
+          "course": "VAL",
+          "going": "G",
+          "raw_course": "VAL",
+          "ref": "754",
+          "race_class_stake": "MdnmG 120k",
+          "average_merit_rating": "66",
+          "distance": "1200",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
+          "official_merit_rating": "",
+          "jockey": "K Matsunyane",
+          "weight_allowance": "60",
+          "draw_runners": "11-12",
+          "opening_betting": "7-1",
+          "starting_price": "25-2",
+          "position_800m": "5",
+          "lengths_800m": "1.7",
+          "position_400m": "6",
+          "lengths_400m": "24",
+          "finish_position": "4",
+          "finish_length": "1.40",
+          "winner_or_second": "War Of Kingdoms",
+          "winner_weight": "60",
+          "winner_time": "70.48",
+          "final_400": "22.5",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": ".1",
+          "adjusted_time_per_metre": "0 .05934",
+          "speed_rating": "40",
+          "next_start_winners": "2/10..",
+          "comment": "....Spread sh•not strid",
+          "raw_text": "g 17Apr25 VAL G | 754 MdnmG 120k | 66 | 1200S A | K Matsunyane | 60 | 11-12 | 7-1 | 25-2 | 5 1.7 | 6 24 | 4 | 1.40 War Of Kingdoms 60 | 70.48 22.5 | 2 | .1 0 .05934 | 40 | 2/10.. ....Spread sh•not strid"
+        },
         {
           "race_number": "3",
           "horse_number": "2",
@@ -14714,6 +14970,10 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "17Apr25",
+            "course": "VAL"
+          },
+          {
             "date": "29Nov25",
             "course": "TUR"
           },
@@ -14735,8 +14995,8 @@
           }
         ],
         "course_code_counts": {
+          "VAL": 2,
           "TUR": 3,
-          "VAL": 1,
           "TFI": 1
         },
         "surface_counts": {
@@ -14748,7 +15008,7 @@
         "greyville_total_starts": "0",
         "poly_starts_all_known_codes": "0",
         "turf_starts_all_known_codes": "4",
-        "known_date_course_pairs": "5",
+        "known_date_course_pairs": "6",
         "current_race_distance": "2200m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -14865,7 +15125,7 @@
           "horse_number": "3",
           "horse_name": "MAGIC VERSE",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -15143,7 +15403,7 @@
             "course": "KENC"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -15749,7 +16009,7 @@
           "horse_number": "5",
           "horse_name": "IMILENZEYOKUDUDUMA",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -16062,7 +16322,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -16622,7 +16882,7 @@
           "horse_number": "7",
           "horse_name": "FIELD MARSHAL",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -16661,7 +16921,7 @@
           "horse_number": "7",
           "horse_name": "FIELD MARSHAL",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -16978,11 +17238,11 @@
             "course": "SCI"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -19072,7 +19332,7 @@
           "horse_number": "12",
           "horse_name": "OTTO WYKEN",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -19276,7 +19536,7 @@
             "course": "KEN"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -19385,6 +19645,45 @@
         "norm": ""
       },
       "past_runs": [
+        {
+          "race_number": "3",
+          "horse_number": "13",
+          "horse_name": "COPPER EAGLE",
+          "date_marker": "g",
+          "date": "11Oct25",
+          "course": "TF'",
+          "going": "G",
+          "raw_course": "TF'",
+          "ref": "174",
+          "race_class_stake": "GrdmA 100k",
+          "average_merit_rating": "96",
+          "distance": "1450",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
+          "official_merit_rating": "91",
+          "jockey": "K Matsunyane",
+          "weight_allowance": "55.5",
+          "draw_runners": "8-9",
+          "opening_betting": "9-2",
+          "starting_price": "8-1",
+          "position_800m": "8",
+          "lengths_800m": "5.6",
+          "position_400m": "756",
+          "lengths_400m": "",
+          "finish_position": "8",
+          "finish_length": "6.25",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "88.45",
+          "final_400": "23.5",
+          "finish_rank": "5",
+          "horse_adjusted_vs_average": "-1",
+          "adjusted_time_per_metre": "0 .06143",
+          "speed_rating": "39",
+          "next_start_winners": "0/9........",
+          "comment": ".Never dangerous",
+          "raw_text": "g 110ct25 TF' G | 174 GrdmA 100k | 96 | 1450R A | 91 K Matsunyane | 55.5 | 8-9 | 9-2 | 8-1 | 8 5.6 | 756 | 8 | 6.25 | 88.45 23.5 | 5 | -1 0 .06143 | 39 | 0/9.........Never dangerous"
+        },
         {
           "race_number": "3",
           "horse_number": "13",
@@ -19703,6 +20002,10 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "11Oct25",
+            "course": "TF'"
+          },
+          {
             "date": "29Nov25",
             "course": "TUR"
           },
@@ -19736,6 +20039,7 @@
           }
         ],
         "course_code_counts": {
+          "TF'": 1,
           "TUR": 6,
           "VAC": 1,
           "VAL": 1
@@ -19749,7 +20053,7 @@
         "greyville_total_starts": "0",
         "poly_starts_all_known_codes": "0",
         "turf_starts_all_known_codes": "6",
-        "known_date_course_pairs": "8",
+        "known_date_course_pairs": "9",
         "current_race_distance": "2200m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -20831,7 +21135,7 @@
           "horse_number": "3",
           "horse_name": "MASTER REDOUTE",
           "date_marker": "",
-          "date": "28Ju124",
+          "date": "28Jul24",
           "course": "GRY",
           "going": "G",
           "raw_course": "GRY",
@@ -21070,7 +21374,7 @@
             "course": "GRY"
           },
           {
-            "date": "28Ju124",
+            "date": "28Jul24",
             "course": "GRY"
           },
           {
@@ -21227,7 +21531,7 @@
           "horse_number": "4",
           "horse_name": "HOLDING THUMBS",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -21266,7 +21570,7 @@
           "horse_number": "4",
           "horse_name": "HOLDING THUMBS",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -21505,11 +21809,11 @@
             "course": "SCI"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -21669,7 +21973,7 @@
           "horse_number": "5",
           "horse_name": "TAXHAVEN",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -22025,7 +22329,7 @@
             "course": "SCI"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -22595,7 +22899,7 @@
           "horse_number": "7",
           "horse_name": "THEMIKADO",
           "date_marker": "",
-          "date": "30Ju125",
+          "date": "30Jul25",
           "course": "SCI",
           "going": "G",
           "raw_course": "SCI",
@@ -22986,7 +23290,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "30Ju125",
+            "date": "30Jul25",
             "course": "SCI"
           },
           {
@@ -23122,7 +23426,7 @@
           "horse_number": "8",
           "horse_name": "SHOOT THE RAPIDS",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -23161,7 +23465,7 @@
           "horse_number": "8",
           "horse_name": "SHOOT THE RAPIDS",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -23513,11 +23817,11 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -24130,7 +24434,7 @@
           "horse_number": "10",
           "horse_name": "AHEAD OF THE FACTS",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -24365,7 +24669,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -24962,7 +25266,7 @@
           "horse_number": "12",
           "horse_name": "SON OF RAJ",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -25275,7 +25579,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -26333,9 +26637,9 @@
           "ref": "713",
           "race_class_stake": "JuvfD 12k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C Murray",
           "weight_allowance": "60",
@@ -26556,9 +26860,9 @@
           "ref": "397",
           "race_class_stake": "MjpfF125k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C Zackey",
           "weight_allowance": "60",
@@ -26634,9 +26938,9 @@
           "ref": "553",
           "race_class_stake": "StreC250k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "S Moodley",
           "weight_allowance": "58.5",
@@ -26865,9 +27169,9 @@
           "ref": "359",
           "race_class_stake": "MjpfF140k",
           "average_merit_rating": "O",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C Little",
           "weight_allowance": "60",
@@ -27575,9 +27879,9 @@
           "ref": "269",
           "race_class_stake": "MjpmF 140k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C Murray",
           "weight_allowance": "57.5",
@@ -27614,9 +27918,9 @@
           "ref": "378",
           "race_class_stake": "125k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS AB",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "",
           "jockey": "C Murray",
           "weight_allowance": "60",
@@ -27653,9 +27957,9 @@
           "ref": "397",
           "race_class_stake": "MjpfF 125k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS AB",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "",
           "jockey": "C Murray",
           "weight_allowance": "60",
@@ -28500,9 +28804,9 @@
           "ref": "493",
           "race_class_stake": "MjpfF 120k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "P Mxoli",
           "weight_allowance": "60",
@@ -28539,9 +28843,9 @@
           "ref": "750",
           "race_class_stake": "Ppstc 250k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "M Yeni",
           "weight_allowance": "58",
@@ -28949,9 +29253,9 @@
           "ref": "713",
           "race_class_stake": "12k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C Habib",
           "weight_allowance": "60",
@@ -28988,9 +29292,9 @@
           "ref": "750",
           "race_class_stake": "PpstC250k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "S Moodley",
           "weight_allowance": "55",
@@ -29169,9 +29473,9 @@
           "ref": "320",
           "race_class_stake": "JstkC600k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "S Veale",
           "weight_allowance": "59",
@@ -29735,9 +30039,9 @@
           "ref": "351",
           "race_class_stake": "KfupD250k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "S Khumalo",
           "weight_allowance": "60",
@@ -30129,6 +30433,45 @@
           "race_number": "6",
           "horse_number": "4",
           "horse_name": "RIFF RAFF BOY",
+          "date_marker": "g",
+          "date": "14Dec25",
+          "course": "SCT",
+          "going": "Y",
+          "raw_course": "SCT",
+          "ref": "269",
+          "race_class_stake": "MjpmF 140k",
+          "average_merit_rating": "",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
+          "official_merit_rating": "",
+          "jockey": "D Pillay",
+          "weight_allowance": "60-25",
+          "draw_runners": "10-12",
+          "opening_betting": "14-1",
+          "starting_price": "16-1",
+          "position_800m": "9",
+          "lengths_800m": "5.7",
+          "position_400m": "860",
+          "lengths_400m": "",
+          "finish_position": "710.20",
+          "finish_length": "Master",
+          "winner_or_second": "Magician",
+          "winner_weight": "60",
+          "winner_time": "56.10",
+          "final_400": "23.2",
+          "finish_rank": "6",
+          "horse_adjusted_vs_average": ".04",
+          "adjusted_time_per_metre": ".05970",
+          "speed_rating": "51",
+          "next_start_winners": "2/11",
+          "comment": "..........SIowinto stride",
+          "raw_text": "g 14Dec25 SCT Y | 269 MjpmF 140k | IOOOS A | D Pillay | 60-25 | 10-12 | 14-1 | 16-1 | 9 5.7 | 860 | 710.20 | Master Magician 60 | 56.10 23.2 | 6 | .04 .05970 | 51 | 2/11 ..........SIowinto stride"
+        },
+        {
+          "race_number": "6",
+          "horse_number": "4",
+          "horse_name": "RIFF RAFF BOY",
           "date_marker": "",
           "date": "18Feb26",
           "course": "SCT",
@@ -30326,6 +30669,10 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "14Dec25",
+            "course": "SCT"
+          },
+          {
             "date": "18Feb26",
             "course": "SCT"
           },
@@ -30347,12 +30694,12 @@
           }
         ],
         "course_code_counts": {
-          "SCT": 2,
+          "SCT": 3,
           "GRY": 2,
           "SCI": 1
         },
         "surface_counts": {
-          "turf": 5
+          "turf": 6
         },
         "venue_counts": {
           "greyville": 2
@@ -30361,8 +30708,8 @@
         "greyville_turf_starts_gry": "2",
         "greyville_total_starts": "2",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "5",
-        "known_date_course_pairs": "5",
+        "turf_starts_all_known_codes": "6",
+        "known_date_course_pairs": "6",
         "current_race_distance": "1400m",
         "current_distance_token_matches": "3",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -30447,9 +30794,9 @@
           "ref": "493",
           "race_class_stake": "MjpfF120k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "R Munger",
           "weight_allowance": "60",
@@ -30486,9 +30833,9 @@
           "ref": "600",
           "race_class_stake": "RufsC200k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "R Munger",
           "weight_allowance": "60",
@@ -30661,24 +31008,64 @@
           "race_number": "6",
           "horse_number": "6",
           "horse_name": "BISOU BISOU",
-          "date": "unclear",
-          "course": "unclear",
-          "raw_text": "Past-performance rows not safely separable from OCR profile card."
+          "date_marker": "g",
+          "date": "14Jun26",
+          "course": "TUR",
+          "going": "G",
+          "raw_course": "TUR",
+          "ref": "878",
+          "race_class_stake": "125k",
+          "average_merit_rating": "O",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AH",
+          "official_merit_rating": "",
+          "jockey": "C Murray",
+          "weight_allowance": "60",
+          "draw_runners": "1-10",
+          "opening_betting": "7-2",
+          "starting_price": "6-1",
+          "position_800m": "5",
+          "lengths_800m": "3.3",
+          "position_400m": "424",
+          "lengths_400m": "",
+          "finish_position": "1",
+          "finish_length": "1.00",
+          "winner_or_second": "*Rivera57.5",
+          "winner_weight": "",
+          "winner_time": "57.58",
+          "final_400": "22.1",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": "+02",
+          "adjusted_time_per_metre": ".05740",
+          "speed_rating": "64",
+          "next_start_winners": "0/0...",
+          "comment": "Broke thr•drew away",
+          "raw_text": "g 14Jun26 TUR G | 878 125k | O | IOOOSAH | C Murray | 60 | 1-10 | 7-2 | 6-1 | 5 3.3 | 424 | 1 | 1.00 *Rivera57.5 | 57.58 22.1 | +02 .05740 | 64 | 0/0... Broke thr•drew away"
         }
       ],
       "collateral_formlines": [],
       "derived_exposure": {
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
-        "date_course_pairs": [],
-        "course_code_counts": {},
-        "surface_counts": {},
+        "date_course_pairs": [
+          {
+            "date": "14Jun26",
+            "course": "TUR"
+          }
+        ],
+        "course_code_counts": {
+          "TUR": 1
+        },
+        "surface_counts": {
+          "turf": 1
+        },
         "venue_counts": {},
         "greyville_poly_starts_grp": "0",
         "greyville_turf_starts_gry": "0",
         "greyville_total_starts": "0",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "0",
-        "known_date_course_pairs": "0",
+        "turf_starts_all_known_codes": "1",
+        "known_date_course_pairs": "1",
         "current_race_distance": "1400m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -30841,9 +31228,9 @@
           "ref": "320",
           "race_class_stake": "600k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "K de Melo",
           "weight_allowance": "59",
@@ -31026,9 +31413,9 @@
           "ref": "377",
           "race_class_stake": "MjpmF 140k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "S Moodley",
           "weight_allowance": "60",
@@ -31290,9 +31677,9 @@
           "ref": "320",
           "race_class_stake": "600k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C Habib",
           "weight_allowance": "59",
@@ -31739,9 +32126,9 @@
           "ref": "295",
           "race_class_stake": "MjpmF 160k",
           "average_merit_rating": "O",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C zackey",
           "weight_allowance": "60",
@@ -32352,6 +32739,45 @@
           "race_number": "6",
           "horse_number": "14",
           "horse_name": "ERIK DUBOIS",
+          "date_marker": "g",
+          "date": "29Mar26",
+          "course": "GRY",
+          "going": "Y",
+          "raw_course": "GRY",
+          "ref": "477",
+          "race_class_stake": "JuvmD 150k",
+          "average_merit_rating": "o",
+          "distance": "1200",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
+          "official_merit_rating": "",
+          "jockey": "K de Melo",
+          "weight_allowance": "57",
+          "draw_runners": "",
+          "opening_betting": "14-1",
+          "starting_price": "10-1",
+          "position_800m": "3",
+          "lengths_800m": "3.9",
+          "position_400m": "201",
+          "lengths_400m": "",
+          "finish_position": "1",
+          "finish_length": "0.40",
+          "winner_or_second": "Godiva",
+          "winner_weight": "56",
+          "winner_time": "72.66",
+          "final_400": "24.4",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": "+02",
+          "adjusted_time_per_metre": ".05951",
+          "speed_rating": "63",
+          "next_start_winners": "0/6",
+          "comment": "......Sustained finish",
+          "raw_text": "g 29Mar26 GRY Y | 477 JuvmD 150k | o | 1200R A | K de Melo | 57 | 14-1 | 10-1 | 3 3.9 | 201 | 1 | 0.40 Godiva 56 | 72.66 24.4 | 2 | +02 .05951 | 63 | 0/6 ......Sustained finish"
+        },
+        {
+          "race_number": "6",
+          "horse_number": "14",
+          "horse_name": "ERIK DUBOIS",
           "date_marker": "",
           "date": "06Jun26",
           "course": "GRY",
@@ -32393,25 +32819,29 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "29Mar26",
+            "course": "GRY"
+          },
+          {
             "date": "06Jun26",
             "course": "GRY"
           }
         ],
         "course_code_counts": {
-          "GRY": 1
+          "GRY": 2
         },
         "surface_counts": {
-          "turf": 1
+          "turf": 2
         },
         "venue_counts": {
-          "greyville": 1
+          "greyville": 2
         },
         "greyville_poly_starts_grp": "0",
-        "greyville_turf_starts_gry": "1",
-        "greyville_total_starts": "1",
+        "greyville_turf_starts_gry": "2",
+        "greyville_total_starts": "2",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "1",
-        "known_date_course_pairs": "1",
+        "turf_starts_all_known_codes": "2",
+        "known_date_course_pairs": "2",
         "current_race_distance": "1400m",
         "current_distance_token_matches": "1",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -32535,9 +32965,9 @@
           "ref": "518",
           "race_class_stake": "150k",
           "average_merit_rating": "O",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOSA",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "M Mbuto",
           "weight_allowance": "60-15",
@@ -33104,7 +33534,7 @@
           "horse_number": "1",
           "horse_name": "ISIVIVANE",
           "date_marker": "",
-          "date": "13Ju125",
+          "date": "13Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -33421,7 +33851,7 @@
             "course": "SCT"
           },
           {
-            "date": "13Ju125",
+            "date": "13Jul25",
             "course": "GRP"
           },
           {
@@ -36272,7 +36702,7 @@
           "horse_number": "8",
           "horse_name": "GLADATORIAN",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -36311,7 +36741,7 @@
           "horse_number": "8",
           "horse_name": "GLADATORIAN",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -36511,11 +36941,11 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -37103,7 +37533,7 @@
           "horse_number": "10",
           "horse_name": "NATIVE RULER",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -37307,7 +37737,7 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -37420,7 +37850,7 @@
           "horse_number": "11",
           "horse_name": "NOTE TO SELF",
           "date_marker": "",
-          "date": "22Ju125",
+          "date": "22Jul25",
           "course": "KEN",
           "going": "H",
           "raw_course": "KEN",
@@ -37694,7 +38124,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "22Ju125",
+            "date": "22Jul25",
             "course": "KEN"
           },
           {
@@ -37894,7 +38324,7 @@
           "horse_number": "12",
           "horse_name": "ZEITZ",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -37927,6 +38357,45 @@
           "next_start_winners": "1/9........",
           "comment": "...SuMained finish",
           "raw_text": "05Ju125 GRYn Y | 737 ThukA200k | 104 | 1600R AB | 97 S Moodley | 53.5 | 4-14 | 6-1 | 33-20 | 6 7.0 | 629 | 1 | 0.60 | 95.79 22.8 | 2 | .05937 | 92 | 1/9...........SuMained finish"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "12",
+          "horse_name": "ZEITZ",
+          "date_marker": "g",
+          "date": "18Oct25",
+          "course": "DBV",
+          "going": "G",
+          "raw_course": "DBV",
+          "ref": "128",
+          "race_class_stake": "CasmA 165k",
+          "average_merit_rating": "107",
+          "distance": "1400",
+          "straight_or_turn": "",
+          "shoes_headgear": "1 AB",
+          "official_merit_rating": "101",
+          "jockey": "S Moodley",
+          "weight_allowance": "54",
+          "draw_runners": "5-9",
+          "opening_betting": "28-10",
+          "starting_price": "9-2",
+          "position_800m": "6",
+          "lengths_800m": "4.2",
+          "position_400m": "6",
+          "lengths_400m": "44",
+          "finish_position": "2",
+          "finish_length": "1.00",
+          "winner_or_second": "Outlaw King",
+          "winner_weight": "60",
+          "winner_time": "85.36",
+          "final_400": "22.8",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": "-oo",
+          "adjusted_time_per_metre": ".06147",
+          "speed_rating": "59",
+          "next_start_winners": "",
+          "comment": ".......Ran on hte",
+          "raw_text": "g 180ct25 DBV G | 128 CasmA 165k | 107 | 14001 AB | 101 S Moodley | 54 | 5-9 | 28-10 | 9-2 | 6 4.2 | 6 44 | 2 | 1.00 Outlaw King 60 | 85.36 22.8 | 2 | -oo .06147 | 59 | .......Ran on hte"
         },
         {
           "race_number": "7",
@@ -38137,8 +38606,12 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
+          },
+          {
+            "date": "18Oct25",
+            "course": "DBV"
           },
           {
             "date": "08Nov25",
@@ -38164,11 +38637,12 @@
         "course_code_counts": {
           "KEN": 3,
           "GRY": 3,
+          "DBV": 1,
           "KENO": 1,
           "SCI": 1
         },
         "surface_counts": {
-          "turf": 7
+          "turf": 8
         },
         "venue_counts": {
           "greyville": 3
@@ -38177,8 +38651,8 @@
         "greyville_turf_starts_gry": "3",
         "greyville_total_starts": "3",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "7",
-        "known_date_course_pairs": "8",
+        "turf_starts_all_known_codes": "8",
+        "known_date_course_pairs": "9",
         "current_race_distance": "2200m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -38412,7 +38886,7 @@
           "horse_number": "13",
           "horse_name": "MOCHA BLEND",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -38663,7 +39137,7 @@
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -38822,7 +39296,7 @@
           "horse_number": "14",
           "horse_name": "SALUTE YOU",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -38861,7 +39335,7 @@
           "horse_number": "14",
           "horse_name": "SALUTE YOU",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -38894,6 +39368,45 @@
           "next_start_winners": "2/10",
           "comment": "...Took over easily",
           "raw_text": "27Ju125 GRY Y | 782 DastA25k | 101 | 1600R AB | 103 R Fourie | 55.5 | 1-14 | 7-2 | 2-1 | 4 3.9 | 422 | 1.40 *Winter Games 54 | 95.63 22.3 | 4 | .05937 | 97 | 2/10 ...Took over easily"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "14",
+          "horse_name": "SALUTE YOU",
+          "date_marker": "g",
+          "date": "12Oct25",
+          "course": "GRY",
+          "going": "G",
+          "raw_course": "GRY",
+          "ref": "151",
+          "race_class_stake": "KasmA 165k",
+          "average_merit_rating": "110",
+          "distance": "1200",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "107",
+          "jockey": "MYeni",
+          "weight_allowance": "57",
+          "draw_runners": "12-12",
+          "opening_betting": "20-1",
+          "starting_price": "25-2",
+          "position_800m": "10",
+          "lengths_800m": "6.0",
+          "position_400m": "10",
+          "lengths_400m": "",
+          "finish_position": "9",
+          "finish_length": "6.20",
+          "winner_or_second": "Giant",
+          "winner_weight": "615",
+          "winner_time": "70.34",
+          "final_400": "23.5",
+          "finish_rank": "6",
+          "horse_adjusted_vs_average": "+01",
+          "adjusted_time_per_metre": ".05951",
+          "speed_rating": "61",
+          "next_start_winners": "0/12.......",
+          "comment": "Rolled in 700m",
+          "raw_text": "g 120ct25 GRY G | 151 KasmA 165k | 110 | 1200R AB | 107 MYeni | 57 | 12-12 | 20-1 | 25-2 | 10 6.0 | 10 | 9 | 6.20 Giant 615 | 70.34 23.5 | 6 | +01 .05951 | 61 | 0/12....... Rolled in 700m"
         },
         {
           "race_number": "7",
@@ -39022,11 +39535,15 @@
             "course": "SCI"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
+            "course": "GRY"
+          },
+          {
+            "date": "12Oct25",
             "course": "GRY"
           },
           {
@@ -39044,21 +39561,21 @@
         ],
         "course_code_counts": {
           "SCI": 2,
-          "GRY": 3,
+          "GRY": 4,
           "KEN": 1
         },
         "surface_counts": {
-          "turf": 6
+          "turf": 7
         },
         "venue_counts": {
-          "greyville": 3
+          "greyville": 4
         },
         "greyville_poly_starts_grp": "0",
-        "greyville_turf_starts_gry": "3",
-        "greyville_total_starts": "3",
+        "greyville_turf_starts_gry": "4",
+        "greyville_total_starts": "4",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "6",
-        "known_date_course_pairs": "6",
+        "turf_starts_all_known_codes": "7",
+        "known_date_course_pairs": "7",
         "current_race_distance": "2200m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -39960,396 +40477,6 @@
           "next_start_winners": "0/1",
           "comment": "...Rein drop100•aImost",
           "raw_text": "30May26 GRY G | 635 WoolA500k | 110 | 2000R A | 114 M Yeni | 60 | 6-7 | 16-1 | 33-1 | 1 1.9 | 136 | 2 | 0.05 Wish List 57.5 | 125.57 23.5 | 6 | .08 .06250 | 43 | 0/1 ...Rein drop100•aImost"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "18May25",
-          "course": "SCI",
-          "going": "G",
-          "raw_course": "SCI",
-          "ref": "613",
-          "race_class_stake": "KasmA 185k",
-          "average_merit_rating": "111",
-          "distance": "1500",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "105",
-          "jockey": "NPateI",
-          "weight_allowance": "57",
-          "draw_runners": "8-10",
-          "opening_betting": "25-1",
-          "starting_price": "33-1",
-          "position_800m": "10",
-          "lengths_800m": "9.0",
-          "position_400m": "9124",
-          "lengths_400m": "",
-          "finish_position": "8",
-          "finish_length": "8.60",
-          "winner_or_second": "",
-          "winner_weight": "",
-          "winner_time": "89.05",
-          "final_400": "23.4",
-          "finish_rank": "2",
-          "horse_adjusted_vs_average": "06",
-          "adjusted_time_per_metre": ".06073",
-          "speed_rating": "49",
-          "next_start_winners": "2/10....",
-          "comment": "..Carried out 1300m",
-          "raw_text": "18May25 SCI G | 613 KasmA 185k | 111 | 1500R AB | 105 NPateI | 57 | 8-10 | 25-1 | 33-1 | 10 9.0 | 9124 | 8 | 8.60 | 89.05 23.4 | 2 | 06 .06073 | 49 | 2/10.... ..Carried out 1300m"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "14Jun25",
-          "course": "SCI",
-          "going": "G",
-          "raw_course": "SCI",
-          "ref": "682",
-          "race_class_stake": "DbntA350k",
-          "average_merit_rating": "100",
-          "distance": "2400",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "105",
-          "jockey": "S Khumalo",
-          "weight_allowance": "58.5",
-          "draw_runners": "3-8",
-          "opening_betting": "10-1",
-          "starting_price": "10-1",
-          "position_800m": "3",
-          "lengths_800m": "2.7",
-          "position_400m": "2",
-          "lengths_400m": "02",
-          "finish_position": "1",
-          "finish_length": "1.20",
-          "winner_or_second": "Thumbs",
-          "winner_weight": "578",
-          "winner_time": "149.21",
-          "final_400": "24.3",
-          "finish_rank": "2",
-          "horse_adjusted_vs_average": "+31",
-          "adjusted_time_per_metre": ".06230",
-          "speed_rating": "121",
-          "next_start_winners": "1/6.",
-          "comment": "Showed his class",
-          "raw_text": "14Jun25 SCI G | 682 DbntA350k | 100 | 2400R AB | 105 S Khumalo | 58.5 | 3-8 | 10-1 | 10-1 | 3 2.7 | 2 02 | 1 | 1.20 Thumbs 578 | 149.21 24.3 | 2 | +31 .06230 | 121 | 1/6. Showed his class"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "05Ju125",
-          "course": "GRY",
-          "going": "Y",
-          "raw_course": "GRY",
-          "ref": "731",
-          "race_class_stake": "VaseA300k",
-          "average_merit_rating": "92",
-          "distance": "3000",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "112",
-          "jockey": "S Khumalo",
-          "weight_allowance": "60",
-          "draw_runners": "3-11",
-          "opening_betting": "4-1",
-          "starting_price": "9-4",
-          "position_800m": "6",
-          "lengths_800m": "4.2",
-          "position_400m": "102",
-          "lengths_400m": "",
-          "finish_position": "1",
-          "finish_length": "3.00",
-          "winner_or_second": "",
-          "winner_weight": "",
-          "winner_time": "193.10",
-          "final_400": "257",
-          "finish_rank": "",
-          "horse_adjusted_vs_average": ".06364",
-          "adjusted_time_per_metre": "",
-          "speed_rating": "x",
-          "next_start_winners": "1/10..",
-          "comment": ".Lost 2L•now the Cup",
-          "raw_text": "05Ju125 GRY Y | 731 VaseA300k | 92 | 3000R AB | 112 S Khumalo | 60 | 3-11 | 4-1 | 9-4 | 6 4.2 | 102 | 1 | 3.00 | 193.10 257 | .06364 | x | 1/10.. .Lost 2L•now the Cup"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "27Ju125",
-          "course": "GRY",
-          "going": "Y",
-          "raw_course": "GRY",
-          "ref": "788",
-          "race_class_stake": "GoldA 1000k",
-          "average_merit_rating": "106",
-          "distance": "3200",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "118",
-          "jockey": "S Khumalo",
-          "weight_allowance": "60",
-          "draw_runners": "4-12",
-          "opening_betting": "33-20",
-          "starting_price": "54",
-          "position_800m": "6",
-          "lengths_800m": "4.7",
-          "position_400m": "6",
-          "lengths_400m": "32",
-          "finish_position": "1",
-          "finish_length": "1.20",
-          "winner_or_second": "Thumbs",
-          "winner_weight": "575",
-          "winner_time": "205.23",
-          "final_400": "232",
-          "finish_rank": "",
-          "horse_adjusted_vs_average": ".06359",
-          "adjusted_time_per_metre": "",
-          "speed_rating": "x",
-          "next_start_winners": "1/8.....",
-          "comment": "Hung out-Gold King",
-          "raw_text": "27Ju125 GRY Y | 788 GoldA 1000k | 106 | 3200R AB | 118 S Khumalo | 60 | 4-12 | 33-20 | 54 | 6 4.7 | 6 32 | 1 | 1.20 Thumbs 575 | 205.23 232 | .06359 | x | 1/8.....Hung out-Gold King"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "12Oct25",
-          "course": "GRY",
-          "going": "G",
-          "raw_course": "GRY",
-          "ref": "151",
-          "race_class_stake": "KasmA 165k",
-          "average_merit_rating": "110",
-          "distance": "1200",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "122",
-          "jockey": "NPateI",
-          "weight_allowance": "61.5",
-          "draw_runners": "3-12",
-          "opening_betting": "25-1",
-          "starting_price": "33-1",
-          "position_800m": "5",
-          "lengths_800m": "2.5",
-          "position_400m": "5",
-          "lengths_400m": "24",
-          "finish_position": "5",
-          "finish_length": "3.20",
-          "winner_or_second": "IAmGlant61S",
-          "winner_weight": "",
-          "winner_time": "70.34",
-          "final_400": "23.5",
-          "finish_rank": "7",
-          "horse_adjusted_vs_average": "+09",
-          "adjusted_time_per_metre": ".05911",
-          "speed_rating": "79",
-          "next_start_winners": "0/12",
-          "comment": "Fair sprint up",
-          "raw_text": "120ct25 GRY G | 151 KasmA 165k | 110 | 1200R AB | 122 NPateI | 61.5 | 3-12 | 25-1 | 33-1 | 5 2.5 | 5 24 | 5 | 3.20 IAmGlant61S | 70.34 23.5 | 7 | +09 .05911 | 79 | 0/12 Fair sprint up"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "07Nov25",
-          "course": "GRY",
-          "going": "G",
-          "raw_course": "GRY",
-          "ref": "194",
-          "race_class_stake": "c02mA 128k",
-          "average_merit_rating": "106",
-          "distance": "1600",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "122",
-          "jockey": "NPateI",
-          "weight_allowance": "60.5",
-          "draw_runners": "",
-          "opening_betting": "4-1",
-          "starting_price": "7-1",
-          "position_800m": "6",
-          "lengths_800m": "3.3",
-          "position_400m": "6",
-          "lengths_400m": "24",
-          "finish_position": "2",
-          "finish_length": "0.60",
-          "winner_or_second": "On My Honour",
-          "winner_weight": "54",
-          "winner_time": "100.33",
-          "final_400": "23 0",
-          "finish_rank": "",
-          "horse_adjusted_vs_average": "-1",
-          "adjusted_time_per_metre": "4 .06171",
-          "speed_rating": "33",
-          "next_start_winners": "0/5.....",
-          "comment": "Lost 21 tried",
-          "raw_text": "07Nov25 GRY G | 194 c02mA 128k | 106 | 1600R AB | 122 NPateI | 60.5 | 4-1 | 7-1 | 6 3.3 | 6 24 | 2 | 0.60 On My Honour 54 | 100.33 23 0 | -1 4 .06171 | 33 | 0/5..... Lost 21 tried"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "29Nov25",
-          "course": "TUR",
-          "going": "Y",
-          "raw_course": "TUR",
-          "ref": "311",
-          "race_class_stake": "SummA6000k",
-          "average_merit_rating": "",
-          "distance": "2000",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "122",
-          "jockey": "S Khumalo",
-          "weight_allowance": "57.5",
-          "draw_runners": "11-20",
-          "opening_betting": "5-1",
-          "starting_price": "5-2",
-          "position_800m": "9",
-          "lengths_800m": "6.6",
-          "position_400m": "3",
-          "lengths_400m": "02",
-          "finish_position": "1216.25",
-          "finish_length": "Mocha",
-          "winner_or_second": "",
-          "winner_weight": "",
-          "winner_time": "127.32",
-          "final_400": "29.6",
-          "finish_rank": "13",
-          "horse_adjusted_vs_average": "25",
-          "adjusted_time_per_metre": ".06403",
-          "speed_rating": "9",
-          "next_start_winners": "2/15",
-          "comment": "..Bumped at stan",
-          "raw_text": "29Nov25 TUR Y | 311 SummA6000k | 2000R AB | 122 S Khumalo | 57.5 | 11-20 | 5-1 | 5-2 | 9 6.6 | 3 02 | 1216.25 | Mocha | 127.32 29.6 | 13 | 25 .06403 | 9 | 2/15 ..Bumped at stan"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "08Feb26",
-          "course": "SCI",
-          "going": "Y",
-          "raw_course": "SCI",
-          "ref": "384",
-          "race_class_stake": "UmthA200k",
-          "average_merit_rating": "100",
-          "distance": "1950",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "122",
-          "jockey": "S Khumalo",
-          "weight_allowance": "62.5",
-          "draw_runners": "1-8",
-          "opening_betting": "5-2",
-          "starting_price": "33-20",
-          "position_800m": "3",
-          "lengths_800m": "4.5",
-          "position_400m": "103",
-          "lengths_400m": "",
-          "finish_position": "1",
-          "finish_length": "1.30",
-          "winner_or_second": "",
-          "winner_weight": "",
-          "winner_time": "119.72",
-          "final_400": "22.6",
-          "finish_rank": "",
-          "horse_adjusted_vs_average": "+23",
-          "adjusted_time_per_metre": ".06140",
-          "speed_rating": "107",
-          "next_start_winners": "1/7",
-          "comment": "...........Form win •easy",
-          "raw_text": "08Feb26 SCI Y | 384 UmthA200k | 100 | 1950R AB | 122 S Khumalo | 62.5 | 1-8 | 5-2 | 33-20 | 3 4.5 | 103 | 1 | 1.30 | 119.72 22.6 | +23 .06140 | 107 | 1/7 ...........Form win •easy"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "15Mar26",
-          "course": "SCI",
-          "going": "G",
-          "raw_course": "SCI",
-          "ref": "455",
-          "race_class_stake": "KingA 165k",
-          "average_merit_rating": "108",
-          "distance": "1600",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "122",
-          "jockey": "S Khumalo",
-          "weight_allowance": "62",
-          "draw_runners": "6-9",
-          "opening_betting": "5-2",
-          "starting_price": "18-10",
-          "position_800m": "7",
-          "lengths_800m": "4.8",
-          "position_400m": "638",
-          "lengths_400m": "",
-          "finish_position": "2",
-          "finish_length": "0.60",
-          "winner_or_second": "",
-          "winner_weight": "",
-          "winner_time": "95.73",
-          "final_400": "23.1",
-          "finish_rank": "",
-          "horse_adjusted_vs_average": ".06045",
-          "adjusted_time_per_metre": "",
-          "speed_rating": "87",
-          "next_start_winners": "1/9........",
-          "comment": ".Another solid run",
-          "raw_text": "15Mar26 SCI G | 455 KingA 165k | 108 | 1600R AB | 122 S Khumalo | 62 | 6-9 | 5-2 | 18-10 | 7 4.8 | 638 | 2 | 0.60 | 95.73 23.1 | .06045 | 87 | 1/9.........Another solid run"
-        },
-        {
-          "race_number": "7",
-          "horse_number": "16",
-          "horse_name": "MINOGUE",
-          "date_marker": "",
-          "date": "17May26",
-          "course": "SCI",
-          "going": "G",
-          "raw_course": "SCI",
-          "ref": "599",
-          "race_class_stake": "KasmA200k",
-          "average_merit_rating": "112",
-          "distance": "1400",
-          "straight_or_turn": "R",
-          "shoes_headgear": "AB",
-          "official_merit_rating": "122",
-          "jockey": "G Lerena",
-          "weight_allowance": "61.5",
-          "draw_runners": "3-6",
-          "opening_betting": "5-1",
-          "starting_price": "6-1",
-          "position_800m": "5",
-          "lengths_800m": "4.5",
-          "position_400m": "5",
-          "lengths_400m": "47",
-          "finish_position": "4",
-          "finish_length": "3.00",
-          "winner_or_second": "Zeitz55.5",
-          "winner_weight": "",
-          "winner_time": "84.32",
-          "final_400": "22.4",
-          "finish_rank": "3",
-          "horse_adjusted_vs_average": "01",
-          "adjusted_time_per_metre": ".06088",
-          "speed_rating": "58",
-          "next_start_winners": "1/3...",
-          "comment": "...Stayed on",
-          "raw_text": "17May26 SCI G | 599 KasmA200k | 112 | 1400R AB | 122 G Lerena | 61.5 | 3-6 | 5-1 | 6-1 | 5 4.5 | 5 47 | 4 | 3.00 Zeitz55.5 | 84.32 22.4 | 3 | 01 .06088 | 58 | 1/3... ...Stayed on"
         }
       ],
       "collateral_formlines": [],
@@ -40391,68 +40518,27 @@
           {
             "date": "30May26",
             "course": "GRY"
-          },
-          {
-            "date": "18May25",
-            "course": "SCI"
-          },
-          {
-            "date": "14Jun25",
-            "course": "SCI"
-          },
-          {
-            "date": "05Ju125",
-            "course": "GRY"
-          },
-          {
-            "date": "27Ju125",
-            "course": "GRY"
-          },
-          {
-            "date": "12Oct25",
-            "course": "GRY"
-          },
-          {
-            "date": "07Nov25",
-            "course": "GRY"
-          },
-          {
-            "date": "29Nov25",
-            "course": "TUR"
-          },
-          {
-            "date": "08Feb26",
-            "course": "SCI"
-          },
-          {
-            "date": "15Mar26",
-            "course": "SCI"
-          },
-          {
-            "date": "17May26",
-            "course": "SCI"
           }
         ],
         "course_code_counts": {
           "TF'": 1,
           "TFI": 1,
-          "TUR": 6,
+          "TUR": 5,
           "KEN": 1,
-          "GRY": 5,
-          "SCI": 5
+          "GRY": 1
         },
         "surface_counts": {
-          "turf": 18
+          "turf": 8
         },
         "venue_counts": {
-          "greyville": 5
+          "greyville": 1
         },
         "greyville_poly_starts_grp": "0",
-        "greyville_turf_starts_gry": "5",
-        "greyville_total_starts": "5",
+        "greyville_turf_starts_gry": "1",
+        "greyville_total_starts": "1",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "18",
-        "known_date_course_pairs": "19",
+        "turf_starts_all_known_codes": "8",
+        "known_date_course_pairs": "9",
         "current_race_distance": "2200m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -40481,11 +40567,11 @@
       "form_comment": "Classy-can mow em down",
       "forecast_price": "25/1",
       "computaform_rating": "71",
-      "speed_rating": "",
+      "speed_rating": "89",
       "best_weighted_rating": "",
       "top_first3_distance_category": "",
       "top_first3_track": "",
-      "best_vs_average": "",
+      "best_vs_average": "+2.96",
       "shoes": "",
       "race_rating": "",
       "equipment": "",
@@ -40496,32 +40582,32 @@
         "sire": "",
         "dam": "",
         "damsire": "",
-        "foaled": "",
-        "gelded": "",
+        "foaled": "04 sep 2020",
+        "gelded": "31 Jan 2024",
         "bred_by": ""
       },
       "owner": "",
       "career_record": {
-        "life": "",
-        "current_year": "",
-        "previous_year": "",
-        "jockey_horse": "",
-        "jockey_trainer": "",
+        "life": "28-8-5-2-3",
+        "current_year": "3-1-1-0-1",
+        "previous_year": "10-4-1-0-1",
+        "jockey_horse": "0-0-0-0-0",
+        "jockey_trainer": "0-0-0-0-0",
         "poly": "",
         "course": "",
-        "distance": "",
-        "course_and_distance": "",
+        "distance": "0-0-0-0-0",
+        "course_and_distance": "0-0-0-0-0",
         "rain": "",
-        "class": "",
-        "surface": "",
+        "class": "ClasA: 16-5-2-0-2",
+        "surface": "TURF: 28-8-5-2-3",
         "normal": "",
-        "good": "",
-        "wet": "",
-        "win_place_range": "",
-        "turf": "",
-        "headgear": "",
-        "rest_record": "",
-        "distance_category": "",
+        "good": "14-2-4-1-1",
+        "wet": "14-6-1-1-2",
+        "win_place_range": "12-3200m",
+        "turf": "28-8-5-2-3",
+        "headgear": "20-7-4-1-2",
+        "rest_record": "Rest+2: 5-1-2-0-0",
+        "distance_category": "9-3-2-1-0",
         "norm": ""
       },
       "past_runs": [
@@ -40529,24 +40615,455 @@
           "race_number": "7",
           "horse_number": "17",
           "horse_name": "KING PELLES",
-          "date": "unclear",
-          "course": "unclear",
-          "raw_text": "Past-performance header not safely located in OCR profile card."
+          "date_marker": "",
+          "date": "18May25",
+          "course": "SCI",
+          "going": "G",
+          "raw_course": "SCI",
+          "ref": "613",
+          "race_class_stake": "KasmA 185k",
+          "average_merit_rating": "111",
+          "distance": "1500",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "105",
+          "jockey": "NPateI",
+          "weight_allowance": "57",
+          "draw_runners": "8-10",
+          "opening_betting": "25-1",
+          "starting_price": "33-1",
+          "position_800m": "10",
+          "lengths_800m": "9.0",
+          "position_400m": "9124",
+          "lengths_400m": "",
+          "finish_position": "8",
+          "finish_length": "8.60",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "89.05",
+          "final_400": "23.4",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": "06",
+          "adjusted_time_per_metre": ".06073",
+          "speed_rating": "49",
+          "next_start_winners": "2/10....",
+          "comment": "..Carried out 1300m",
+          "raw_text": "18May25 SCI G | 613 KasmA 185k | 111 | 1500R AB | 105 NPateI | 57 | 8-10 | 25-1 | 33-1 | 10 9.0 | 9124 | 8 | 8.60 | 89.05 23.4 | 2 | 06 .06073 | 49 | 2/10.... ..Carried out 1300m"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "14Jun25",
+          "course": "SCI",
+          "going": "G",
+          "raw_course": "SCI",
+          "ref": "682",
+          "race_class_stake": "DbntA350k",
+          "average_merit_rating": "100",
+          "distance": "2400",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "105",
+          "jockey": "S Khumalo",
+          "weight_allowance": "58.5",
+          "draw_runners": "3-8",
+          "opening_betting": "10-1",
+          "starting_price": "10-1",
+          "position_800m": "3",
+          "lengths_800m": "2.7",
+          "position_400m": "2",
+          "lengths_400m": "02",
+          "finish_position": "1",
+          "finish_length": "1.20",
+          "winner_or_second": "Thumbs",
+          "winner_weight": "578",
+          "winner_time": "149.21",
+          "final_400": "24.3",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": "+31",
+          "adjusted_time_per_metre": ".06230",
+          "speed_rating": "121",
+          "next_start_winners": "1/6.",
+          "comment": "Showed his class",
+          "raw_text": "14Jun25 SCI G | 682 DbntA350k | 100 | 2400R AB | 105 S Khumalo | 58.5 | 3-8 | 10-1 | 10-1 | 3 2.7 | 2 02 | 1 | 1.20 Thumbs 578 | 149.21 24.3 | 2 | +31 .06230 | 121 | 1/6. Showed his class"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "05Jul25",
+          "course": "GRY",
+          "going": "Y",
+          "raw_course": "GRY",
+          "ref": "731",
+          "race_class_stake": "VaseA300k",
+          "average_merit_rating": "92",
+          "distance": "3000",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "112",
+          "jockey": "S Khumalo",
+          "weight_allowance": "60",
+          "draw_runners": "3-11",
+          "opening_betting": "4-1",
+          "starting_price": "9-4",
+          "position_800m": "6",
+          "lengths_800m": "4.2",
+          "position_400m": "102",
+          "lengths_400m": "",
+          "finish_position": "1",
+          "finish_length": "3.00",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "193.10",
+          "final_400": "257",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": ".06364",
+          "adjusted_time_per_metre": "",
+          "speed_rating": "x",
+          "next_start_winners": "1/10..",
+          "comment": ".Lost 2L•now the Cup",
+          "raw_text": "05Ju125 GRY Y | 731 VaseA300k | 92 | 3000R AB | 112 S Khumalo | 60 | 3-11 | 4-1 | 9-4 | 6 4.2 | 102 | 1 | 3.00 | 193.10 257 | .06364 | x | 1/10.. .Lost 2L•now the Cup"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "27Jul25",
+          "course": "GRY",
+          "going": "Y",
+          "raw_course": "GRY",
+          "ref": "788",
+          "race_class_stake": "GoldA 1000k",
+          "average_merit_rating": "106",
+          "distance": "3200",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "118",
+          "jockey": "S Khumalo",
+          "weight_allowance": "60",
+          "draw_runners": "4-12",
+          "opening_betting": "33-20",
+          "starting_price": "54",
+          "position_800m": "6",
+          "lengths_800m": "4.7",
+          "position_400m": "6",
+          "lengths_400m": "32",
+          "finish_position": "1",
+          "finish_length": "1.20",
+          "winner_or_second": "Thumbs",
+          "winner_weight": "575",
+          "winner_time": "205.23",
+          "final_400": "232",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": ".06359",
+          "adjusted_time_per_metre": "",
+          "speed_rating": "x",
+          "next_start_winners": "1/8.....",
+          "comment": "Hung out-Gold King",
+          "raw_text": "27Ju125 GRY Y | 788 GoldA 1000k | 106 | 3200R AB | 118 S Khumalo | 60 | 4-12 | 33-20 | 54 | 6 4.7 | 6 32 | 1 | 1.20 Thumbs 575 | 205.23 232 | .06359 | x | 1/8.....Hung out-Gold King"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "12Oct25",
+          "course": "GRY",
+          "going": "G",
+          "raw_course": "GRY",
+          "ref": "151",
+          "race_class_stake": "KasmA 165k",
+          "average_merit_rating": "110",
+          "distance": "1200",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "122",
+          "jockey": "NPateI",
+          "weight_allowance": "61.5",
+          "draw_runners": "3-12",
+          "opening_betting": "25-1",
+          "starting_price": "33-1",
+          "position_800m": "5",
+          "lengths_800m": "2.5",
+          "position_400m": "5",
+          "lengths_400m": "24",
+          "finish_position": "5",
+          "finish_length": "3.20",
+          "winner_or_second": "IAmGlant61S",
+          "winner_weight": "",
+          "winner_time": "70.34",
+          "final_400": "23.5",
+          "finish_rank": "7",
+          "horse_adjusted_vs_average": "+09",
+          "adjusted_time_per_metre": ".05911",
+          "speed_rating": "79",
+          "next_start_winners": "0/12",
+          "comment": "Fair sprint up",
+          "raw_text": "120ct25 GRY G | 151 KasmA 165k | 110 | 1200R AB | 122 NPateI | 61.5 | 3-12 | 25-1 | 33-1 | 5 2.5 | 5 24 | 5 | 3.20 IAmGlant61S | 70.34 23.5 | 7 | +09 .05911 | 79 | 0/12 Fair sprint up"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "07Nov25",
+          "course": "GRY",
+          "going": "G",
+          "raw_course": "GRY",
+          "ref": "194",
+          "race_class_stake": "c02mA 128k",
+          "average_merit_rating": "106",
+          "distance": "1600",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "122",
+          "jockey": "NPateI",
+          "weight_allowance": "60.5",
+          "draw_runners": "",
+          "opening_betting": "4-1",
+          "starting_price": "7-1",
+          "position_800m": "6",
+          "lengths_800m": "3.3",
+          "position_400m": "6",
+          "lengths_400m": "24",
+          "finish_position": "2",
+          "finish_length": "0.60",
+          "winner_or_second": "On My Honour",
+          "winner_weight": "54",
+          "winner_time": "100.33",
+          "final_400": "23 0",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": "-1",
+          "adjusted_time_per_metre": "4 .06171",
+          "speed_rating": "33",
+          "next_start_winners": "0/5.....",
+          "comment": "Lost 21 tried",
+          "raw_text": "07Nov25 GRY G | 194 c02mA 128k | 106 | 1600R AB | 122 NPateI | 60.5 | 4-1 | 7-1 | 6 3.3 | 6 24 | 2 | 0.60 On My Honour 54 | 100.33 23 0 | -1 4 .06171 | 33 | 0/5..... Lost 21 tried"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "29Nov25",
+          "course": "TUR",
+          "going": "Y",
+          "raw_course": "TUR",
+          "ref": "311",
+          "race_class_stake": "SummA6000k",
+          "average_merit_rating": "",
+          "distance": "2000",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "122",
+          "jockey": "S Khumalo",
+          "weight_allowance": "57.5",
+          "draw_runners": "11-20",
+          "opening_betting": "5-1",
+          "starting_price": "5-2",
+          "position_800m": "9",
+          "lengths_800m": "6.6",
+          "position_400m": "3",
+          "lengths_400m": "02",
+          "finish_position": "1216.25",
+          "finish_length": "Mocha",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "127.32",
+          "final_400": "29.6",
+          "finish_rank": "13",
+          "horse_adjusted_vs_average": "25",
+          "adjusted_time_per_metre": ".06403",
+          "speed_rating": "9",
+          "next_start_winners": "2/15",
+          "comment": "..Bumped at stan",
+          "raw_text": "29Nov25 TUR Y | 311 SummA6000k | 2000R AB | 122 S Khumalo | 57.5 | 11-20 | 5-1 | 5-2 | 9 6.6 | 3 02 | 1216.25 | Mocha | 127.32 29.6 | 13 | 25 .06403 | 9 | 2/15 ..Bumped at stan"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "08Feb26",
+          "course": "SCI",
+          "going": "Y",
+          "raw_course": "SCI",
+          "ref": "384",
+          "race_class_stake": "UmthA200k",
+          "average_merit_rating": "100",
+          "distance": "1950",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "122",
+          "jockey": "S Khumalo",
+          "weight_allowance": "62.5",
+          "draw_runners": "1-8",
+          "opening_betting": "5-2",
+          "starting_price": "33-20",
+          "position_800m": "3",
+          "lengths_800m": "4.5",
+          "position_400m": "103",
+          "lengths_400m": "",
+          "finish_position": "1",
+          "finish_length": "1.30",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "119.72",
+          "final_400": "22.6",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": "+23",
+          "adjusted_time_per_metre": ".06140",
+          "speed_rating": "107",
+          "next_start_winners": "1/7",
+          "comment": "...........Form win •easy",
+          "raw_text": "08Feb26 SCI Y | 384 UmthA200k | 100 | 1950R AB | 122 S Khumalo | 62.5 | 1-8 | 5-2 | 33-20 | 3 4.5 | 103 | 1 | 1.30 | 119.72 22.6 | +23 .06140 | 107 | 1/7 ...........Form win •easy"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "15Mar26",
+          "course": "SCI",
+          "going": "G",
+          "raw_course": "SCI",
+          "ref": "455",
+          "race_class_stake": "KingA 165k",
+          "average_merit_rating": "108",
+          "distance": "1600",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "122",
+          "jockey": "S Khumalo",
+          "weight_allowance": "62",
+          "draw_runners": "6-9",
+          "opening_betting": "5-2",
+          "starting_price": "18-10",
+          "position_800m": "7",
+          "lengths_800m": "4.8",
+          "position_400m": "638",
+          "lengths_400m": "",
+          "finish_position": "2",
+          "finish_length": "0.60",
+          "winner_or_second": "",
+          "winner_weight": "",
+          "winner_time": "95.73",
+          "final_400": "23.1",
+          "finish_rank": "",
+          "horse_adjusted_vs_average": ".06045",
+          "adjusted_time_per_metre": "",
+          "speed_rating": "87",
+          "next_start_winners": "1/9........",
+          "comment": ".Another solid run",
+          "raw_text": "15Mar26 SCI G | 455 KingA 165k | 108 | 1600R AB | 122 S Khumalo | 62 | 6-9 | 5-2 | 18-10 | 7 4.8 | 638 | 2 | 0.60 | 95.73 23.1 | .06045 | 87 | 1/9.........Another solid run"
+        },
+        {
+          "race_number": "7",
+          "horse_number": "17",
+          "horse_name": "KING PELLES",
+          "date_marker": "",
+          "date": "17May26",
+          "course": "SCI",
+          "going": "G",
+          "raw_course": "SCI",
+          "ref": "599",
+          "race_class_stake": "KasmA200k",
+          "average_merit_rating": "112",
+          "distance": "1400",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
+          "official_merit_rating": "122",
+          "jockey": "G Lerena",
+          "weight_allowance": "61.5",
+          "draw_runners": "3-6",
+          "opening_betting": "5-1",
+          "starting_price": "6-1",
+          "position_800m": "5",
+          "lengths_800m": "4.5",
+          "position_400m": "5",
+          "lengths_400m": "47",
+          "finish_position": "4",
+          "finish_length": "3.00",
+          "winner_or_second": "Zeitz55.5",
+          "winner_weight": "",
+          "winner_time": "84.32",
+          "final_400": "22.4",
+          "finish_rank": "3",
+          "horse_adjusted_vs_average": "01",
+          "adjusted_time_per_metre": ".06088",
+          "speed_rating": "58",
+          "next_start_winners": "1/3...",
+          "comment": "...Stayed on",
+          "raw_text": "17May26 SCI G | 599 KasmA200k | 112 | 1400R AB | 122 G Lerena | 61.5 | 3-6 | 5-1 | 6-1 | 5 4.5 | 5 47 | 4 | 3.00 Zeitz55.5 | 84.32 22.4 | 3 | 01 .06088 | 58 | 1/3... ...Stayed on"
         }
       ],
       "collateral_formlines": [],
       "derived_exposure": {
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
-        "date_course_pairs": [],
-        "course_code_counts": {},
-        "surface_counts": {},
-        "venue_counts": {},
+        "date_course_pairs": [
+          {
+            "date": "18May25",
+            "course": "SCI"
+          },
+          {
+            "date": "14Jun25",
+            "course": "SCI"
+          },
+          {
+            "date": "05Jul25",
+            "course": "GRY"
+          },
+          {
+            "date": "27Jul25",
+            "course": "GRY"
+          },
+          {
+            "date": "12Oct25",
+            "course": "GRY"
+          },
+          {
+            "date": "07Nov25",
+            "course": "GRY"
+          },
+          {
+            "date": "29Nov25",
+            "course": "TUR"
+          },
+          {
+            "date": "08Feb26",
+            "course": "SCI"
+          },
+          {
+            "date": "15Mar26",
+            "course": "SCI"
+          },
+          {
+            "date": "17May26",
+            "course": "SCI"
+          }
+        ],
+        "course_code_counts": {
+          "SCI": 5,
+          "GRY": 4,
+          "TUR": 1
+        },
+        "surface_counts": {
+          "turf": 10
+        },
+        "venue_counts": {
+          "greyville": 4
+        },
         "greyville_poly_starts_grp": "0",
-        "greyville_turf_starts_gry": "0",
-        "greyville_total_starts": "0",
+        "greyville_turf_starts_gry": "4",
+        "greyville_total_starts": "4",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "0",
-        "known_date_course_pairs": "0",
+        "turf_starts_all_known_codes": "10",
+        "known_date_course_pairs": "10",
         "current_race_distance": "2200m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -40663,7 +41180,7 @@
           "horse_number": "18",
           "horse_name": "ALADDIN'S LAMP",
           "date_marker": "",
-          "date": "19Ju125",
+          "date": "19Jul25",
           "course": "TUR",
           "going": "G",
           "raw_course": "TUR",
@@ -40980,7 +41497,7 @@
             "course": "TUR"
           },
           {
-            "date": "19Ju125",
+            "date": "19Jul25",
             "course": "TUR"
           },
           {
@@ -42020,7 +42537,7 @@
           "horse_number": "1",
           "horse_name": "LOU LOU",
           "date_marker": "",
-          "date": "09Ju125",
+          "date": "09Jul25",
           "course": "SCT",
           "going": "G",
           "raw_course": "SCT",
@@ -42337,7 +42854,7 @@
             "course": "SCT"
           },
           {
-            "date": "09Ju125",
+            "date": "09Jul25",
             "course": "SCT"
           },
           {
@@ -42981,7 +43498,7 @@
           "horse_number": "3",
           "horse_name": "RAINBOW LORIKEET",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -43020,7 +43537,7 @@
           "horse_number": "3",
           "horse_name": "RAINBOW LORIKEET",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -43263,11 +43780,11 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -43502,7 +44019,7 @@
           "horse_number": "4",
           "horse_name": "WHISTLE THE TUNE",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -43749,7 +44266,7 @@
             "course": "SCT"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -43867,7 +44384,7 @@
           "horse_number": "5",
           "horse_name": "RODEO DRIVE",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -44219,7 +44736,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -44506,7 +45023,7 @@
           "horse_number": "6",
           "horse_name": "MON PETIT CHERIE",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -44718,7 +45235,7 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -44839,9 +45356,9 @@
           "ref": "559",
           "race_class_stake": "StreC250k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "K Matsunyane",
           "weight_allowance": "58",
@@ -44910,7 +45427,7 @@
           "horse_number": "7",
           "horse_name": "QUICKSTEPGAL",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -45114,7 +45631,7 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -45227,7 +45744,7 @@
           "horse_number": "8",
           "horse_name": "KEUKENHOF",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -45266,7 +45783,7 @@
           "horse_number": "8",
           "horse_name": "KEUKENHOF",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -45540,11 +46057,11 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -45705,7 +46222,7 @@
           "horse_number": "9",
           "horse_name": "SCARLET MACAW",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -46022,7 +46539,7 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -46304,7 +46821,7 @@
           "horse_number": "10",
           "horse_name": "DOUBLE GRAND SLAM",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -46516,7 +47033,7 @@
             "course": "SCT"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -46631,7 +47148,7 @@
           "horse_number": "11",
           "horse_name": "KISSHOTEN",
           "date_marker": "",
-          "date": "26Ju125",
+          "date": "26Jul25",
           "course": "TUR",
           "going": "G",
           "raw_course": "TUR",
@@ -46983,7 +47500,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "26Ju125",
+            "date": "26Jul25",
             "course": "TUR"
           },
           {
@@ -47117,9 +47634,9 @@
           "ref": "153",
           "race_class_stake": "SespA225k",
           "average_merit_rating": "105",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "",
           "official_merit_rating": "99",
           "jockey": "J Solomons",
           "weight_allowance": "52",
@@ -47195,9 +47712,9 @@
           "ref": "389",
           "race_class_stake": "sophA 150k",
           "average_merit_rating": "102",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS B",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "B",
           "official_merit_rating": "97",
           "jockey": "CHabb",
           "weight_allowance": "56",
@@ -47234,9 +47751,9 @@
           "ref": "416",
           "race_class_stake": "GrdmA 130k",
           "average_merit_rating": "101",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS B",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "B",
           "official_merit_rating": "97",
           "jockey": "CHabb",
           "weight_allowance": "57",
@@ -47312,9 +47829,9 @@
           "ref": "689",
           "race_class_stake": "GrdmB 117k",
           "average_merit_rating": "91",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "93",
           "jockey": "CHabb",
           "weight_allowance": "56.5",
@@ -47351,9 +47868,9 @@
           "ref": "717",
           "race_class_stake": "GrspA 120k",
           "average_merit_rating": "99",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "99",
           "jockey": "CHabb",
           "weight_allowance": "56.5",
@@ -47390,9 +47907,9 @@
           "ref": "545",
           "race_class_stake": "IffhA25k",
           "average_merit_rating": "99",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "102",
           "jockey": "CHabb",
           "weight_allowance": "56",
@@ -47631,7 +48148,7 @@
           "horse_number": "2",
           "horse_name": "OUTLAW KING",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -47670,7 +48187,7 @@
           "horse_number": "2",
           "horse_name": "OUTLAW KING",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -47909,11 +48426,11 @@
             "course": "SCT"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -48039,9 +48556,9 @@
           "ref": "719",
           "race_class_stake": "MjpfF125k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "C zackey",
           "weight_allowance": "60",
@@ -48071,7 +48588,7 @@
           "horse_number": "3",
           "horse_name": "PRINCESS OF GAUL",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -48310,7 +48827,7 @@
             "course": "SCT"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -48871,9 +49388,9 @@
           "ref": "439",
           "race_class_stake": "CasmA 185k",
           "average_merit_rating": "104",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "104",
           "jockey": "A Fortune",
           "weight_allowance": "57",
@@ -48981,7 +49498,7 @@
           "horse_number": "5",
           "horse_name": "TENANGO",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -49027,9 +49544,9 @@
           "ref": "201",
           "race_class_stake": "BbstA225k",
           "average_merit_rating": "108",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "126",
           "jockey": "A Domeyer",
           "weight_allowance": "62",
@@ -49066,9 +49583,9 @@
           "ref": "272",
           "race_class_stake": "C02mA 136k",
           "average_merit_rating": "116",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "126",
           "jockey": "A Domeyer",
           "weight_allowance": "59.5",
@@ -49193,7 +49710,7 @@
             "course": "SCT"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -49900,7 +50417,7 @@
           "horse_number": "7",
           "horse_name": "DAVE THE KING",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -50112,7 +50629,7 @@
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -50390,9 +50907,9 @@
           "ref": "545",
           "race_class_stake": "IffhA25k",
           "average_merit_rating": "99",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "102",
           "jockey": "CZackey",
           "weight_allowance": "56",
@@ -50576,7 +51093,7 @@
           "horse_number": "9",
           "horse_name": "BUFFALO STORM CODY",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -50615,7 +51132,7 @@
           "horse_number": "9",
           "horse_name": "BUFFALO STORM CODY",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -50854,11 +51371,11 @@
             "course": "TUR"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -50975,7 +51492,7 @@
           "horse_number": "10",
           "horse_name": "ZIYASHA",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -51138,9 +51655,9 @@
           "ref": "605",
           "race_class_stake": "ThotA300k",
           "average_merit_rating": "109",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS Bt",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "Bt",
           "official_merit_rating": "117",
           "jockey": "R Danielson",
           "weight_allowance": "60",
@@ -51294,9 +51811,9 @@
           "ref": "822",
           "race_class_stake": "PinnA 150k",
           "average_merit_rating": "106",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS At",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "At",
           "official_merit_rating": "118",
           "jockey": "G Lerena",
           "weight_allowance": "60",
@@ -51366,7 +51883,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -52054,7 +52571,7 @@
           "horse_number": "12",
           "horse_name": "GREAT PLAINS",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -52266,7 +52783,7 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -52419,7 +52936,7 @@
           "horse_number": "13",
           "horse_name": "CAFE CULTURE",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -52697,7 +53214,7 @@
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -52859,7 +53376,7 @@
           "horse_number": "14",
           "horse_name": "CATS PAJAMAS",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -53022,9 +53539,9 @@
           "ref": "357",
           "race_class_stake": "AhhpA2mk",
           "average_merit_rating": "110",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "120",
           "jockey": "CZackey",
           "weight_allowance": "62.5",
@@ -53139,9 +53656,9 @@
           "ref": "672",
           "race_class_stake": "C12mA 185k",
           "average_merit_rating": "108",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOR AB",
+          "distance": "1000",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
           "official_merit_rating": "122",
           "jockey": "DDLouw",
           "weight_allowance": "64-25",
@@ -53176,7 +53693,7 @@
             "course": "SCT"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -53302,7 +53819,7 @@
           "horse_number": "15",
           "horse_name": "FUTURE VARIETY",
           "date_marker": "",
-          "date": "13Ju125",
+          "date": "13Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -53341,7 +53858,7 @@
           "horse_number": "15",
           "horse_name": "FUTURE VARIETY",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -53504,9 +54021,9 @@
           "ref": "324",
           "race_class_stake": "WspcA250k",
           "average_merit_rating": "Ill",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "116",
           "jockey": "A Domeyer",
           "weight_allowance": "62",
@@ -53693,11 +54210,11 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "13Ju125",
+            "date": "13Jul25",
             "course": "GRP"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -53828,6 +54345,45 @@
           "race_number": "9",
           "horse_number": "16",
           "horse_name": "LION RAMPART",
+          "date_marker": "g",
+          "date": "16Mar25",
+          "course": "KEN",
+          "going": "G",
+          "raw_course": "KEN",
+          "ref": "439",
+          "race_class_stake": "CasmA 185k",
+          "average_merit_rating": "104",
+          "distance": "",
+          "straight_or_turn": "",
+          "shoes_headgear": "",
+          "official_merit_rating": "111",
+          "jockey": "R Fourie",
+          "weight_allowance": "57",
+          "draw_runners": "6-7",
+          "opening_betting": "2-1",
+          "starting_price": "7-2",
+          "position_800m": "2",
+          "lengths_800m": "0.2",
+          "position_400m": "206",
+          "lengths_400m": "",
+          "finish_position": "6",
+          "finish_length": "1.40",
+          "winner_or_second": "Gem King57",
+          "winner_weight": "",
+          "winner_time": "64.32",
+          "final_400": "23.4",
+          "finish_rank": "6",
+          "horse_adjusted_vs_average": ".05",
+          "adjusted_time_per_metre": ".06035",
+          "speed_rating": "51",
+          "next_start_winners": "2/6.....",
+          "comment": "Steadied hte",
+          "raw_text": "g 16Mar25 KEN G | 439 CasmA 185k | 104 | 111 R Fourie | 57 | 6-7 | 2-1 | 7-2 | 2 0.2 | 206 | 6 | 1.40 Gem King57 | 64.32 23.4 | 6 | .05 .06035 | 51 | 2/6..... Steadied hte"
+        },
+        {
+          "race_number": "9",
+          "horse_number": "16",
+          "horse_name": "LION RAMPART",
           "date_marker": "",
           "date": "21Apr25",
           "course": "KEN",
@@ -53875,9 +54431,9 @@
           "ref": "690",
           "race_class_stake": "C12mA 175k",
           "average_merit_rating": "104",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "110",
           "jockey": "G Lerena",
           "weight_allowance": "58",
@@ -53907,7 +54463,7 @@
           "horse_number": "16",
           "horse_name": "LION RAMPART",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -53992,9 +54548,9 @@
           "ref": "153",
           "race_class_stake": "SespA225k",
           "average_merit_rating": "105",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS AB",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "113",
           "jockey": "S Veale",
           "weight_allowance": "61.5",
@@ -54142,6 +54698,10 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
+            "date": "16Mar25",
+            "course": "KEN"
+          },
+          {
             "date": "21Apr25",
             "course": "KEN"
           },
@@ -54150,7 +54710,7 @@
             "course": "SCT"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -54175,12 +54735,12 @@
           }
         ],
         "course_code_counts": {
-          "KEN": 3,
+          "KEN": 4,
           "SCT": 3,
           "GRY": 2
         },
         "surface_counts": {
-          "turf": 8
+          "turf": 9
         },
         "venue_counts": {
           "greyville": 2
@@ -54189,8 +54749,8 @@
         "greyville_turf_starts_gry": "2",
         "greyville_total_starts": "2",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "8",
-        "known_date_course_pairs": "8",
+        "turf_starts_all_known_codes": "9",
+        "known_date_course_pairs": "9",
         "current_race_distance": "1200m",
         "current_distance_token_matches": "3",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -54307,7 +54867,7 @@
           "horse_number": "17",
           "horse_name": "ZALATORIS",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -54470,9 +55030,9 @@
           "ref": "568",
           "race_class_stake": "MwarA275k",
           "average_merit_rating": "99",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS AB",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "105",
           "jockey": "CZackey",
           "weight_allowance": "58",
@@ -54548,9 +55108,9 @@
           "ref": "717",
           "race_class_stake": "GrspA 120k",
           "average_merit_rating": "99",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "108",
           "jockey": "K Strydom",
           "weight_allowance": "61",
@@ -54585,7 +55145,7 @@
             "course": "TFI"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -55577,6 +56137,45 @@
           "race_number": "10",
           "horse_number": "3",
           "horse_name": "BETTER MAN",
+          "date_marker": "g",
+          "date": "15Jul25",
+          "course": "KENO",
+          "going": "H",
+          "raw_course": "KENo",
+          "ref": "605",
+          "race_class_stake": "MjpmF 135k",
+          "average_merit_rating": "",
+          "distance": "1600",
+          "straight_or_turn": "",
+          "shoes_headgear": "1 A",
+          "official_merit_rating": "",
+          "jockey": "G Lerena",
+          "weight_allowance": "60",
+          "draw_runners": "7-9",
+          "opening_betting": "5-2",
+          "starting_price": "2-1",
+          "position_800m": "1",
+          "lengths_800m": "0.9",
+          "position_400m": "108",
+          "lengths_400m": "",
+          "finish_position": "",
+          "finish_length": "1.25",
+          "winner_or_second": "",
+          "winner_weight": "60",
+          "winner_time": "102.97",
+          "final_400": "23.4",
+          "finish_rank": "2",
+          "horse_adjusted_vs_average": ".1",
+          "adjusted_time_per_metre": "6 .06395",
+          "speed_rating": "28",
+          "next_start_winners": "3/7",
+          "comment": "Led • kept on well",
+          "raw_text": "g 15Ju125 KENo H | 605 MjpmF 135k | 16001 A | G Lerena | 60 | 7-9 | 5-2 | 2-1 | 1 0.9 | 108 | 1.25 60 | 102.97 23.4 | 2 | .1 6 .06395 | 28 | 3/7 Led • kept on well"
+        },
+        {
+          "race_number": "10",
+          "horse_number": "3",
+          "horse_name": "BETTER MAN",
           "date_marker": "",
           "date": "22Nov25",
           "course": "KEN",
@@ -55782,6 +56381,10 @@
             "course": "KEN"
           },
           {
+            "date": "15Jul25",
+            "course": "KENO"
+          },
+          {
             "date": "22Nov25",
             "course": "KEN"
           },
@@ -55805,6 +56408,7 @@
         "course_code_counts": {
           "DBV": 1,
           "KEN": 5,
+          "KENO": 1,
           "SCI": 1
         },
         "surface_counts": {
@@ -55816,9 +56420,9 @@
         "greyville_total_starts": "0",
         "poly_starts_all_known_codes": "0",
         "turf_starts_all_known_codes": "7",
-        "known_date_course_pairs": "7",
+        "known_date_course_pairs": "8",
         "current_race_distance": "1600m",
-        "current_distance_token_matches": "2",
+        "current_distance_token_matches": "3",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
       },
       "draw_source_note": ""
@@ -56293,7 +56897,7 @@
           "horse_number": "5",
           "horse_name": "GREEN GATEWAY",
           "date_marker": "",
-          "date": "20Ju125",
+          "date": "20Jul25",
           "course": "SCT",
           "going": "Y",
           "raw_course": "SCT",
@@ -56448,6 +57052,45 @@
           "race_number": "10",
           "horse_number": "5",
           "horse_name": "GREEN GATEWAY",
+          "date_marker": "g",
+          "date": "27Mar26",
+          "course": "GRY",
+          "going": "G",
+          "raw_course": "GRYn",
+          "ref": "475",
+          "race_class_stake": "BytuA300k",
+          "average_merit_rating": "103",
+          "distance": "1400",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
+          "official_merit_rating": "105",
+          "jockey": "CZackey",
+          "weight_allowance": "54",
+          "draw_runners": "3-8",
+          "opening_betting": "2-1",
+          "starting_price": "28-10",
+          "position_800m": "7",
+          "lengths_800m": "69",
+          "position_400m": "759",
+          "lengths_400m": "",
+          "finish_position": "6",
+          "finish_length": "4",
+          "winner_or_second": "55 Malnpsbury Missile54",
+          "winner_weight": "",
+          "winner_time": "8509",
+          "final_400": "22.8",
+          "finish_rank": "3",
+          "horse_adjusted_vs_average": "01",
+          "adjusted_time_per_metre": "05994",
+          "speed_rating": "58",
+          "next_start_winners": "1/7",
+          "comment": ".......Lost 2L•directed in",
+          "raw_text": "g 27Mar26 GRYn G | 475 BytuA300k | 103 | 1400R A | 105 CZackey | 54 | 3-8 | 2-1 | 28-10 | 7 69 | 759 | 6 | 4 55 Malnpsbury Missile54 | 8509 22.8 | 3 | 01 05994 | 58 | 1/7 .......Lost 2L•directed in"
+        },
+        {
+          "race_number": "10",
+          "horse_number": "5",
+          "horse_name": "GREEN GATEWAY",
           "date_marker": "",
           "date": "23May26",
           "course": "SCT",
@@ -56489,7 +57132,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "20Ju125",
+            "date": "20Jul25",
             "course": "SCT"
           },
           {
@@ -56505,6 +57148,10 @@
             "course": "KEN"
           },
           {
+            "date": "27Mar26",
+            "course": "GRY"
+          },
+          {
             "date": "23May26",
             "course": "SCT"
           }
@@ -56512,18 +57159,21 @@
         "course_code_counts": {
           "SCT": 2,
           "DBV": 1,
-          "KEN": 2
+          "KEN": 2,
+          "GRY": 1
         },
         "surface_counts": {
-          "turf": 5
+          "turf": 6
         },
-        "venue_counts": {},
+        "venue_counts": {
+          "greyville": 1
+        },
         "greyville_poly_starts_grp": "0",
-        "greyville_turf_starts_gry": "0",
-        "greyville_total_starts": "0",
+        "greyville_turf_starts_gry": "1",
+        "greyville_total_starts": "1",
         "poly_starts_all_known_codes": "0",
-        "turf_starts_all_known_codes": "5",
-        "known_date_course_pairs": "5",
+        "turf_starts_all_known_codes": "6",
+        "known_date_course_pairs": "6",
         "current_race_distance": "1600m",
         "current_distance_token_matches": "0",
         "course_and_distance_alignment": "Structured OCR row parse preserves row-level course and distance cells, but OCR numeric cells should still be spot-checked for high-stakes decisions."
@@ -56608,9 +57258,9 @@
           "ref": "271",
           "race_class_stake": "CwpID250k",
           "average_merit_rating": "o",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "O Noach",
           "weight_allowance": "60",
@@ -56908,7 +57558,7 @@
           "horse_number": "7",
           "horse_name": "IMPOSING",
           "date_marker": "",
-          "date": "13Ju125",
+          "date": "13Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -57260,7 +57910,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "13Ju125",
+            "date": "13Jul25",
             "course": "GRP"
           },
           {
@@ -57868,7 +58518,7 @@
           "horse_number": "9",
           "horse_name": "WINTER GAMES",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -57907,7 +58557,7 @@
           "horse_number": "9",
           "horse_name": "WINTER GAMES",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -58185,11 +58835,11 @@
             "course": "GRY"
           },
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -58830,7 +59480,7 @@
           "horse_number": "11",
           "horse_name": "CAPTAIN WEST",
           "date_marker": "",
-          "date": "26Ju125",
+          "date": "26Jul25",
           "course": "KENO",
           "going": "S",
           "raw_course": "KENo",
@@ -59073,7 +59723,7 @@
             "course": "KENO"
           },
           {
-            "date": "26Ju125",
+            "date": "26Jul25",
             "course": "KENO"
           },
           {
@@ -60930,7 +61580,7 @@
           "horse_number": "16",
           "horse_name": "FORWARD MOTION",
           "date_marker": "",
-          "date": "30Ju125",
+          "date": "30Jul25",
           "course": "SCI",
           "going": "G",
           "raw_course": "SCI",
@@ -61251,7 +61901,7 @@
             "course": "SCI"
           },
           {
-            "date": "30Ju125",
+            "date": "30Jul25",
             "course": "SCI"
           },
           {
@@ -61864,9 +62514,9 @@
           "ref": "859",
           "race_class_stake": "JuvmD 100k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "M Yeni",
           "weight_allowance": "52.5",
@@ -61935,7 +62585,7 @@
           "horse_number": "1",
           "horse_name": "ANCHORAGE",
           "date_marker": "",
-          "date": "17Ju125",
+          "date": "17Jul25",
           "course": "TFI",
           "going": "G",
           "raw_course": "TFI",
@@ -62059,9 +62709,9 @@
           "ref": "389",
           "race_class_stake": "sophA 150k",
           "average_merit_rating": "102",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "96",
           "jockey": "MYeni",
           "weight_allowance": "55.5",
@@ -62137,9 +62787,9 @@
           "ref": "756",
           "race_class_stake": "Fm95A 130k",
           "average_merit_rating": "92",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS AB",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "99",
           "jockey": "S Moodley",
           "weight_allowance": "60",
@@ -62182,7 +62832,7 @@
             "course": "TUR"
           },
           {
-            "date": "17Ju125",
+            "date": "17Jul25",
             "course": "TFI"
           },
           {
@@ -62305,9 +62955,9 @@
           "ref": "685",
           "race_class_stake": "MjpfF 125k",
           "average_merit_rating": "",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "",
           "jockey": "S Khumalo",
           "weight_allowance": "60",
@@ -62337,7 +62987,7 @@
           "horse_number": "2",
           "horse_name": "SERENGETTI SUN",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRY",
@@ -62537,7 +63187,7 @@
             "course": "SCT"
           },
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -63656,7 +64306,7 @@
           "horse_number": "5",
           "horse_name": "LOCK AND KEY",
           "date_marker": "",
-          "date": "27Ju125",
+          "date": "27Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -64008,7 +64658,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "27Ju125",
+            "date": "27Jul25",
             "course": "GRY"
           },
           {
@@ -64142,7 +64792,7 @@
           "horse_number": "6",
           "horse_name": "ONE SMART COOKIE",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRY",
           "going": "Y",
           "raw_course": "GRYn",
@@ -64494,7 +65144,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRY"
           },
           {
@@ -65495,9 +66145,9 @@
           "ref": "162",
           "race_class_stake": "LaisA225k",
           "average_merit_rating": "94",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "98",
           "jockey": "C Little",
           "weight_allowance": "57",
@@ -65573,9 +66223,9 @@
           "ref": "366",
           "race_class_stake": "CbsfB 145k",
           "average_merit_rating": "91",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS At",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "At",
           "official_merit_rating": "94",
           "jockey": "CLittle",
           "weight_allowance": "60",
@@ -66053,9 +66703,9 @@
           "ref": "299",
           "race_class_stake": "130k",
           "average_merit_rating": "92",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOR A",
+          "distance": "1100",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
           "official_merit_rating": "95",
           "jockey": "T Godden",
           "weight_allowance": "60",
@@ -66417,9 +67067,9 @@
           "ref": "227",
           "race_class_stake": "SocrA250k",
           "average_merit_rating": "103",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "94",
           "jockey": "BPIaatjies",
           "weight_allowance": "51",
@@ -66736,7 +67386,7 @@
           "horse_number": "12",
           "horse_name": "SWEETIE DARLING",
           "date_marker": "",
-          "date": "25Ju125",
+          "date": "25Jul25",
           "course": "FVP",
           "going": "N",
           "raw_course": "FVP",
@@ -66977,9 +67627,9 @@
           "ref": "262",
           "race_class_stake": "PinfA 104k",
           "average_merit_rating": "94",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS ABt",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "ABt",
           "official_merit_rating": "100",
           "jockey": "C Little",
           "weight_allowance": "61",
@@ -67127,7 +67777,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "25Ju125",
+            "date": "25Jul25",
             "course": "FVP"
           },
           {
@@ -67384,9 +68034,9 @@
           "ref": "108",
           "race_class_stake": "PrgmB 160k",
           "average_merit_rating": "89",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS A",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "92",
           "jockey": "M Mbuto",
           "weight_allowance": "54-25",
@@ -68225,7 +68875,7 @@
           "horse_number": "15",
           "horse_name": "MISS LADYATERIX",
           "date_marker": "",
-          "date": "05Ju125",
+          "date": "05Jul25",
           "course": "GRP",
           "going": "N",
           "raw_course": "GRP",
@@ -68264,7 +68914,7 @@
           "horse_number": "15",
           "horse_name": "MISS LADYATERIX",
           "date_marker": "",
-          "date": "30Ju125",
+          "date": "30Jul25",
           "course": "SCT",
           "going": "G",
           "raw_course": "SCT",
@@ -68349,9 +68999,9 @@
           "ref": "299",
           "race_class_stake": "130k",
           "average_merit_rating": "92",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOR AM",
+          "distance": "1100",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AM",
           "official_merit_rating": "93",
           "jockey": "C Habib",
           "weight_allowance": "58.5",
@@ -68538,11 +69188,11 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "05Ju125",
+            "date": "05Jul25",
             "course": "GRP"
           },
           {
-            "date": "30Ju125",
+            "date": "30Jul25",
             "course": "SCT"
           },
           {
@@ -69113,9 +69763,9 @@
           "ref": "656",
           "race_class_stake": "KcsmC 140k",
           "average_merit_rating": "75",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOORA",
+          "distance": "1000",
+          "straight_or_turn": "R",
+          "shoes_headgear": "A",
           "official_merit_rating": "79",
           "jockey": "MMicheI",
           "weight_allowance": "57.5-1.5",
@@ -69242,7 +69892,7 @@
           "horse_number": "3",
           "horse_name": "SIBERIAN WINTER",
           "date_marker": "",
-          "date": "20Ju125",
+          "date": "20Jul25",
           "course": "SCI",
           "going": "Y",
           "raw_course": "SCI",
@@ -69594,7 +70244,7 @@
         "method": "Derived from structured OCR profile past-run rows. Use for exposure checks only; official POLY/CRSE/Dist/C&D splits come from career_record.",
         "date_course_pairs": [
           {
-            "date": "20Ju125",
+            "date": "20Jul25",
             "course": "SCI"
           },
           {
@@ -72327,9 +72977,9 @@
           "ref": "508",
           "race_class_stake": "C14fC 110k",
           "average_merit_rating": "77",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOSA",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "84",
           "jockey": "A Fortune",
           "weight_allowance": "60.5",
@@ -72600,9 +73250,9 @@
           "ref": "547",
           "race_class_stake": "C14fC 135k",
           "average_merit_rating": "78",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS A",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "A",
           "official_merit_rating": "78",
           "jockey": "J P v'd Meme",
           "weight_allowance": "58.5",
@@ -72971,9 +73621,9 @@
           "ref": "307",
           "race_class_stake": "Mr76C 85k",
           "average_merit_rating": "75",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOR AB",
+          "distance": "1000",
+          "straight_or_turn": "R",
+          "shoes_headgear": "AB",
           "official_merit_rating": "79",
           "jockey": "C Little",
           "weight_allowance": "58.5",
@@ -73010,9 +73660,9 @@
           "ref": "458",
           "race_class_stake": "KdsmD90k",
           "average_merit_rating": "65",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS AB",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "77",
           "jockey": "CLittle",
           "weight_allowance": "62",
@@ -73127,9 +73777,9 @@
           "ref": "604",
           "race_class_stake": "C14fD 135k",
           "average_merit_rating": "73",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IOOOS AB",
+          "distance": "1000",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "79",
           "jockey": "C Little",
           "weight_allowance": "58.5",
@@ -73205,9 +73855,9 @@
           "ref": "707",
           "race_class_stake": "C14mC 145k",
           "average_merit_rating": "78",
-          "distance": "",
-          "straight_or_turn": "",
-          "shoes_headgear": "IIOOS AB",
+          "distance": "1100",
+          "straight_or_turn": "S",
+          "shoes_headgear": "AB",
           "official_merit_rating": "79",
           "jockey": "G Lerena",
           "weight_allowance": "57.5",
@@ -78250,15 +78900,15 @@
       "source": "Rendered page OCR word boxes from tmp_ocr/g0704_all_wordboxes.json"
     },
     "quality_counts": {
-      "career_life": "178",
-      "career_surface": "180",
+      "career_life": "179",
+      "career_surface": "181",
       "career_course": "178",
-      "career_distance": "177",
-      "career_course_and_distance": "171",
+      "career_distance": "178",
+      "career_course_and_distance": "172",
       "days_since_last_race": "177",
       "days_since_last_win": "177",
-      "structured_past_run_rows": "1319",
-      "placeholder_past_run_rows": "2"
+      "structured_past_run_rows": "1334",
+      "placeholder_past_run_rows": "0"
     },
     "career_record_reconciliation_notes": [
       "Race 3 runner 2 TINTIN: LIFE repaired from surface record because it matches summary starts/wins/places.",
