@@ -127,10 +127,10 @@
       "json_path": "outputs/turffontein_2026_06_11/turffontein_2026_06_11_extraction.json"
     },
     {
-      "id": "hollywoodbets_greyville_2026_07_04_1",
+      "id": "hollywoodbets_greyville_2026_07_04",
       "label": "HOLLYWOODBETS GREYVILLE TURF/POLY - 4 July 2026",
-      "pdf": "HOLLYWOODBETS GREYVILLE@2026.07.04-1.pdf",
-      "json_path": "outputs/hollywoodbets_greyville_2026_07_04_1/hollywoodbets_greyville_2026_07_04_1_extraction.json"
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.07.04.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_07_04/hollywoodbets_greyville_2026_07_04_extraction.json"
     }
   ]
 }
