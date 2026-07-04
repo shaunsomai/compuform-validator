@@ -131,6 +131,12 @@
       "label": "HOLLYWOODBETS GREYVILLE TURF/POLY - 4 July 2026",
       "pdf": "HOLLYWOODBETS GREYVILLE@2026.07.04.pdf",
       "json_path": "outputs/hollywoodbets_greyville_2026_07_04/hollywoodbets_greyville_2026_07_04_extraction.json"
+    },
+    {
+      "id": "turffontein_2026_07_05",
+      "label": "TURFFONTEIN STANDSIDE - 5 July 2026",
+      "pdf": "TURFFONTEIN@2026.07.05.pdf",
+      "json_path": "outputs/turffontein_2026_07_05/turffontein_2026_07_05_extraction.json"
     }
   ]
 }

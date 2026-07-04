@@ -257,7 +257,7 @@ def extract_meeting(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
     if day:
         data["meeting"]["day"] = day.title()
 
-    track_notes = first_match(r"((?:Poly|Turf)\..*?DRAW:.*?)(?:\n[A-Z ]{3,}|ALPHABETICAL INDEX|$)", first_pages, 1, flags=re.I | re.S)
+    track_notes = first_match(r"((?:Poly|Turf)\..*?DRAW:.*?)(?:\nALPHABETICAL INDEX|$)", first_pages, 1, flags=re.I | re.S)
     if track_notes:
         data["meeting"]["track_notes"] = track_notes
         direction = first_match(r"All races ([^.]+?round turn)", track_notes)
@@ -796,7 +796,7 @@ def page_text_range_for_race(
 
 def parse_profile_blocks(text: str) -> list[tuple[re.Match[str], str]]:
     header_re = re.compile(
-        r"(?m)^(?P<num>\d{1,2})\s+(?P<name>[A-Z0-9’' .\-&]+?)\s+LIFE:\s+"
+        r"(?m)^(?P<num>\d{1,2})\s+(?P<name>[A-Z0-9’‘'(). \-&]+?)\s+LIFE:\s+"
         r"(?P<life>\d+-\d+-\d+-\d+-\d+)\s+(?P<surface_label>POLY|TURF):\s+(?P<surface_record>\d+-\d+-\d+-\d+-\d+)\s+"
         r"CRSE:\s+(?P<course>\d+-\d+-\d+-\d+-\d+)"
     )
@@ -818,6 +818,44 @@ def parse_breeding(block: str) -> dict[str, str]:
         "gelded": first_match(r"Gelded:\s*([0-9]{1,2}\s+[A-Za-z]{3}\s+\d{4})", block),
         "bred_by": first_match(r"BRED BY:\s*(.+?)(?:\s+OWNER/S:|$)", block, 1, flags=re.I | re.S),
     }
+    candidate_parts: list[str] = []
+    collecting = False
+    for raw_line in block.splitlines()[1:10]:
+        line = clean_text(raw_line)
+        if not line or line.startswith("Earn:"):
+            continue
+        if "Foaled:" in line:
+            break
+        if not collecting and re.match(r"^\d+\s+[A-Za-z]+\s+[a-z]\s+", line):
+            collecting = True
+        if not collecting:
+            continue
+        line = re.sub(
+            r"\s+(?:20\d{2}|19\d{2}|Wet|Good|Norm|C&D|Dist|Class|J\+H|J\+T):\s.*$",
+            "",
+            line,
+            flags=re.I,
+        )
+        line = clean_text(line)
+        if line:
+            candidate_parts.append(line)
+
+    if candidate_parts:
+        breeding_line = clean_text(" ".join(candidate_parts))
+        if " - " in breeding_line and " by" in breeding_line:
+            if re.search(r"(?:\b[A-Za-z]\s+){6,}", breeding_line):
+                breeding["sire"] = breeding["dam"] = breeding["damsire"] = "unclear"
+                return breeding
+            match = re.match(
+                r"^\d+\s+[A-Za-z]+\s+[a-z]\s+(?P<sire>.+?)\s+-\s+(?P<dam>.+?)\s+by\s*(?P<damsire>.+)$",
+                breeding_line,
+            )
+            if match and clean_text(match.group("damsire")):
+                breeding["sire"] = clean_text(match.group("sire"))
+                breeding["dam"] = clean_text(match.group("dam"))
+                breeding["damsire"] = clean_text(match.group("damsire"))
+                return breeding
+
     for line in block.splitlines()[1:8]:
         line = clean_text(line)
         if " - " not in line or " by " not in line:
@@ -834,6 +872,28 @@ def parse_breeding(block: str) -> dict[str, str]:
     if "Foaled:" in block and not any(breeding[key] for key in ("sire", "dam", "damsire")):
         breeding["sire"] = breeding["dam"] = breeding["damsire"] = "unclear"
     return breeding
+
+
+def normalize_past_run_line(line: str) -> str:
+    line = clean_text(line)
+    # Some PDFs interleave a row number into month glyphs, e.g. 14Ju1 n26 or 16M1ay26.
+    month_glitches = [
+        (r"J\d+\s*an", "Jan"),
+        (r"F\d+\s*eb", "Feb"),
+        (r"M\d+\s*ar", "Mar"),
+        (r"A\d+\s*pr", "Apr"),
+        (r"M\d+\s*ay", "May"),
+        (r"Ju\d+\s*n", "Jun"),
+        (r"Ju\d+\s*l", "Jul"),
+        (r"A\d+\s*ug", "Aug"),
+        (r"S\d+\s*ep", "Sep"),
+        (r"O\d+\s*ct", "Oct"),
+        (r"N\d+\s*ov", "Nov"),
+        (r"D\d+\s*ec", "Dec"),
+    ]
+    for pattern, month in month_glitches:
+        line = re.sub(rf"\b(\d{{2}}){pattern}(\d{{2}})\b", rf"\1{month}\2", line, flags=re.I)
+    return line
 
 
 def blank_past_run(race_number: str, horse_number: str, horse_name: str, raw_text: str) -> dict[str, str]:
@@ -940,7 +1000,7 @@ def assign_past_run_winner_tail(row: dict[str, str], tokens: list[str], winner_w
 
 
 def parse_past_run_row(line: str, race_number: str, horse_number: str, horse_name: str) -> dict[str, str]:
-    line = clean_text(line)
+    line = normalize_past_run_line(line)
     row = blank_past_run(race_number, horse_number, horse_name, line)
 
     marker_match = re.match(r"^(?P<marker>[a-z])\s+(?P<rest>\d{2}[A-Za-z]{3}\d{2}\b.*)$", line)
@@ -1034,7 +1094,7 @@ def extract_past_runs(block: str, race_number: str, horse_number: str, horse_nam
     in_table = False
     current: dict[str, str] | None = None
     for raw_line in block.splitlines():
-        line = clean_text(raw_line)
+        line = normalize_past_run_line(raw_line)
         if not line:
             continue
         if line.startswith("Date Crs G Ref"):
@@ -1325,11 +1385,19 @@ def validate(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
         for past_run in past_rows
         if not past_run.get("date") or not past_run.get("course") or not past_run.get("weight_allowance") or not past_run.get("draw_runners")
     ]
+    runners_expected_past_runs = [
+        runner
+        for runner in data["runners"]
+        if runner.get("career_record", {}).get("life")
+        and not runner["career_record"]["life"].startswith("0-")
+        and not runner["past_runs"]
+    ]
     collateral_rows = [row for runner in data["runners"] for row in runner["collateral_formlines"]]
     collateral_missing_date = [row for row in collateral_rows if not row.get("date")]
     validation["quality_checks"] = {
         "past_performance_rows": str(len(past_rows)),
         "past_performance_rows_missing_core_fields": str(len(past_missing_core)),
+        "runners_with_nonzero_life_record_but_no_past_runs": str(len(runners_expected_past_runs)),
         "collateral_formline_rows": str(len(collateral_rows)),
         "collateral_formline_rows_missing_date": str(len(collateral_missing_date)),
     }
@@ -1340,6 +1408,11 @@ def validate(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
     if collateral_missing_date:
         validation["warnings"].append(
             f"Collateral formlines parse quality: {len(collateral_missing_date)} of {len(collateral_rows)} rows are missing a parsed date."
+        )
+    if runners_expected_past_runs:
+        validation["warnings"].append(
+            "Past-performance coverage: "
+            f"{len(runners_expected_past_runs)} runners have a non-zero life record but no parsed past-performance rows."
         )
 
 
