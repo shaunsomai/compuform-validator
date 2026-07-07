@@ -137,6 +137,12 @@
       "label": "TURFFONTEIN STANDSIDE - 5 July 2026",
       "pdf": "TURFFONTEIN@2026.07.05.pdf",
       "json_path": "outputs/turffontein_2026_07_05/turffontein_2026_07_05_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_durbanville_2026_07_07",
+      "label": "HOLLYWOODBETS DURBANVILLE - 7 July 2026",
+      "pdf": "HOLLYWOODBETS DURBANVILLE@2026.07.07.pdf",
+      "json_path": "outputs/hollywoodbets_durbanville_2026_07_07/hollywoodbets_durbanville_2026_07_07_extraction.json"
     }
   ]
 }

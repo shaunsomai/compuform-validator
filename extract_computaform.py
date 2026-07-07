@@ -6,6 +6,7 @@ import json
 import re
 from collections import defaultdict
 from copy import deepcopy
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -186,12 +187,25 @@ def meeting_parts_from_pdf_name(pdf_path: Path) -> tuple[str, str]:
     return course, f"{day_number} {month_name} {match.group('year')}"
 
 
+def day_from_printed_date(date_text: str) -> str:
+    date_text = clean_text(date_text)
+    if not date_text:
+        return ""
+    try:
+        return datetime.strptime(date_text, "%d %B %Y").strftime("%A")
+    except ValueError:
+        return ""
+
+
 def apply_meeting_fallbacks(data: dict[str, Any], pdf_path: Path) -> None:
     filename_course, filename_date = meeting_parts_from_pdf_name(pdf_path)
     if not data["meeting"]["racecourse"]:
         data["meeting"]["racecourse"] = data["meeting"].get("track") or filename_course
     if not data["meeting"]["date"]:
         data["meeting"]["date"] = filename_date
+    derived_day = day_from_printed_date(data["meeting"].get("date", ""))
+    if derived_day:
+        data["meeting"]["day"] = derived_day
     if not data["meeting"]["number_of_races"] and data["races"]:
         data["meeting"]["number_of_races"] = str(len(data["races"]))
     if not data["meeting"]["first_race_time"] and data["races"]:
