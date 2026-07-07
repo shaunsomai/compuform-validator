@@ -143,6 +143,12 @@
       "label": "HOLLYWOODBETS DURBANVILLE - 7 July 2026",
       "pdf": "HOLLYWOODBETS DURBANVILLE@2026.07.07.pdf",
       "json_path": "outputs/hollywoodbets_durbanville_2026_07_07/hollywoodbets_durbanville_2026_07_07_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_scottsville_2026_07_08",
+      "label": "HOLLYWOODBETS SCOTTSVILLE - 8 July 2026",
+      "pdf": "HOLLYWOODBETS SCOTTSVILLE@2026.07.08.pdf",
+      "json_path": "outputs/hollywoodbets_scottsville_2026_07_08/hollywoodbets_scottsville_2026_07_08_extraction.json"
     }
   ]
 }

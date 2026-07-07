@@ -266,17 +266,18 @@ def extract_meeting(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
         data["meeting"]["date"] = clean_text(match.group(2)).title()
         data["meeting"]["number_of_races"] = match.group(3)
         data["meeting"]["first_race_time"] = match.group(4)
+    meeting_text = first_pages[match.start() :] if match else first_pages
 
     day = first_match(r"\b(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)\b", first_pages)
     if day:
         data["meeting"]["day"] = day.title()
 
-    track_notes = first_match(r"((?:Poly|Turf)\..*?DRAW:.*?)(?:\nALPHABETICAL INDEX|$)", first_pages, 1, flags=re.I | re.S)
+    track_notes = first_match(r"((?:Poly|Turf)\..*?DRAW:.*?)(?:\nALPHABETICAL INDEX|$)", meeting_text, 1, flags=re.I | re.S)
     if track_notes:
         data["meeting"]["track_notes"] = track_notes
         direction = first_match(r"All races ([^.]+?round turn)", track_notes)
         if not direction:
-            direction = first_match(r"beyond 1000m ([^.]+?round turn)", track_notes)
+            direction = first_match(r"beyond \d{3,4}m ([^.]+?round turn)", track_notes)
         data["meeting"]["track_direction"] = direction or ""
         draw = first_match(r"(DRAW:.*)$", track_notes, 1, flags=re.I | re.S)
         data["meeting"]["draw_bias_notes"] = draw
@@ -1169,6 +1170,27 @@ def enrich_runners_with_profiles(
             profile_best_vs_average = first_match(r"Best vs Ave:\s*([+-]?\d+(?:\.\d+)?)", block)
             if profile_best_vs_average:
                 runner["best_vs_average"] = profile_best_vs_average
+            profile_rating_match = re.search(
+                r"C&D:\s*\d+-\d+-\d+-\d+-\d+\s+(?P<cf>\d+|X|--)(?:\s+(?P<headgear>[A-Z][A-Za-z /'’.\-]*?))?\s+(?P<mr>\d+|--)\s+Foaled:",
+                clean_text(block),
+                flags=re.I,
+            )
+            if profile_rating_match:
+                if not runner.get("computaform_rating"):
+                    runner["computaform_rating"] = clean_text(profile_rating_match.group("cf"))
+                headgear = clean_text(profile_rating_match.group("headgear") or "")
+                if headgear and not runner.get("headgear_change"):
+                    runner["headgear_change"] = headgear
+            speed_race_match = re.search(
+                r"Best vs Ave:\s*[+-]?\d+(?:\.\d+)?\s+(?P<speed>\d+|X|--)\s+(?P<race_rating>\d+|X|--)",
+                clean_text(block),
+                flags=re.I,
+            )
+            if speed_race_match:
+                if not runner.get("speed_rating"):
+                    runner["speed_rating"] = clean_text(speed_race_match.group("speed"))
+                if not runner.get("race_rating"):
+                    runner["race_rating"] = clean_text(speed_race_match.group("race_rating"))
 
             runner["days_since_last_race"] = first_match(r"(\d+)\s+Days Since Last Race", block)
             runner["days_since_last_win"] = first_match(r"(\d+)\s+Days Since Last Win", block)
@@ -1279,6 +1301,9 @@ def extract_betting_page(data: dict[str, Any], pages: list[dict[str, Any]]) -> N
         matched_heading = next((key for key in bet_key_map if heading.startswith(key)), "")
         if matched_heading:
             current_bet = bet_key_map[matched_heading]
+            race_range = re.search(r"RACES?\s+(\d+)\s*[-–]\s*(\d+)", cells[0], flags=re.I)
+            if race_range:
+                race_start_map[current_bet] = int(race_range.group(1))
             continue
         if current_bet and cells[0].upper().startswith("LEG"):
             leg_no = int(first_match(r"LEG\s+(\d+)", cells[0]) or "0")
