@@ -161,6 +161,13 @@ def output_folder_for_pdf(base_output_dir: Path, pdf_path: Path) -> Path:
     return base_output_dir / slug_from_pdf_name(pdf_path)
 
 
+def course_base_name(meeting_name: str) -> str:
+    upper = clean_text(meeting_name).upper()
+    for suffix in (" TURF/POLY", " POLYTRACK", " STANDSIDE", " INSIDE", " TURF", " POLY"):
+        upper = upper.replace(suffix, "")
+    return clean_text(upper)
+
+
 def meeting_parts_from_pdf_name(pdf_path: Path) -> tuple[str, str]:
     match = re.match(r"(?P<course>.+?)@(?P<year>\d{4})\.(?P<month>\d{2})\.(?P<day>\d{2})$", pdf_path.stem)
     if not match:
@@ -235,6 +242,12 @@ def normalize_surface(value: str) -> str:
     return value
 
 
+def normalize_track_direction(value: str) -> str:
+    value = clean_text(value)
+    value = re.sub(r"clock-\s*(?:\d{3,4}m\s*)?wise", "clockwise", value, flags=re.I)
+    return value
+
+
 def split_allowance(weight: str) -> tuple[str, str]:
     weight = clean_text(weight)
     if "-" not in weight:
@@ -287,7 +300,7 @@ def extract_meeting(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
         direction = first_match(r"All races ([^.]+?round turn)", track_notes)
         if not direction:
             direction = first_match(r"beyond \d{3,4}m ([^.]+?round turn)", track_notes)
-        data["meeting"]["track_direction"] = direction or ""
+        data["meeting"]["track_direction"] = normalize_track_direction(direction) if direction else ""
         draw = first_match(r"(DRAW:.*)$", track_notes, 1, flags=re.I | re.S)
         data["meeting"]["draw_bias_notes"] = draw
 
@@ -715,7 +728,12 @@ def page_numbers_for_race(
             upper_text = page["text"].upper()
             first_line = next((line.strip().upper() for line in page["text"].splitlines() if line.strip()), "")
             include = page["page_number"] == current_start
-            if f"RACE {race_number} " in upper_text and (not meeting_upper or meeting_upper in upper_text):
+            meeting_base = course_base_name(meeting_upper)
+            if f"RACE {race_number} " in upper_text and (
+                not meeting_upper or meeting_upper in upper_text or (meeting_base and meeting_base in upper_text)
+            ):
+                include = True
+            if previous_included and first_line.startswith(f"RACE {race_number} "):
                 include = True
             if previous_included and first_line.startswith("HORSE DATE CRSE"):
                 include = True

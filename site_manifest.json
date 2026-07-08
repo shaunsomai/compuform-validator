@@ -155,6 +155,24 @@
       "label": "TURFFONTEIN INSIDE - 9 July 2026",
       "pdf": "TURFFONTEIN@2026.07.09.pdf",
       "json_path": "outputs/turffontein_2026_07_09/turffontein_2026_07_09_extraction.json"
+    },
+    {
+      "id": "fairview_2026_07_10",
+      "label": "FAIRVIEW TURF - 10 July 2026",
+      "pdf": "FAIRVIEW@2026.07.10.pdf",
+      "json_path": "outputs/fairview_2026_07_10/fairview_2026_07_10_extraction.json"
+    },
+    {
+      "id": "turffontein_2026_07_11",
+      "label": "TURFFONTEIN STANDSIDE - 11 July 2026",
+      "pdf": "TURFFONTEIN@2026.07.11.pdf",
+      "json_path": "outputs/turffontein_2026_07_11/turffontein_2026_07_11_extraction.json"
+    },
+    {
+      "id": "hollywoodbets_greyville_2026_07_12",
+      "label": "HOLLYWOODBETS GREYVILLE POLY - 12 July 2026",
+      "pdf": "HOLLYWOODBETS GREYVILLE@2026.07.12.pdf",
+      "json_path": "outputs/hollywoodbets_greyville_2026_07_12/hollywoodbets_greyville_2026_07_12_extraction.json"
     }
   ]
 }
