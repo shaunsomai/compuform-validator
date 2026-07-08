@@ -226,6 +226,15 @@ def odds_to_slash(value: str) -> str:
     return value
 
 
+def normalize_surface(value: str) -> str:
+    value = clean_text(value).upper()
+    if value == "URF":
+        return "TURF"
+    if value == "OLY":
+        return "POLY"
+    return value
+
+
 def split_allowance(weight: str) -> tuple[str, str]:
     weight = clean_text(weight)
     if "-" not in weight:
@@ -293,7 +302,7 @@ def extract_meeting(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
             summary_track = clean_text(table0[1][1]) if len(table0) > 1 and len(table0[1]) > 1 else ""
             break
     if summary_surface:
-        data["meeting"]["surface"] = summary_surface
+        data["meeting"]["surface"] = normalize_surface(summary_surface)
     if summary_track:
         data["meeting"]["track"] = summary_track
 
@@ -346,7 +355,7 @@ def parse_race_header(page: dict[str, Any]) -> dict[str, str]:
         top = table0[0]
         middle = table0[1]
         lower = table0[2]
-        race["surface"] = clean_text(top[0]) if len(top) > 0 else ""
+        race["surface"] = normalize_surface(top[0]) if len(top) > 0 else ""
         race["turn"] = clean_text(top[1]) if len(top) > 1 else ""
         race["race_time"] = clean_text(top[2]) if len(top) > 2 else first_match(r"\b(\d{1,2}:\d{2})\b", text)
         race["tab_bet_types"] = clean_text(top[3]) if len(top) > 3 else ""

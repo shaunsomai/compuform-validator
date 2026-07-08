@@ -149,6 +149,12 @@
       "label": "HOLLYWOODBETS SCOTTSVILLE - 8 July 2026",
       "pdf": "HOLLYWOODBETS SCOTTSVILLE@2026.07.08.pdf",
       "json_path": "outputs/hollywoodbets_scottsville_2026_07_08/hollywoodbets_scottsville_2026_07_08_extraction.json"
+    },
+    {
+      "id": "turffontein_2026_07_09",
+      "label": "TURFFONTEIN INSIDE - 9 July 2026",
+      "pdf": "TURFFONTEIN@2026.07.09.pdf",
+      "json_path": "outputs/turffontein_2026_07_09/turffontein_2026_07_09_extraction.json"
     }
   ]
 }
