@@ -248,6 +248,54 @@ def normalize_track_direction(value: str) -> str:
     return value
 
 
+def clean_track_note_line(line: str) -> str:
+    line = clean_text(line)
+    if not line:
+        return ""
+    upper = line.upper()
+    noisy_starts = (
+        "OPEN A TAB",
+        "LATEST RACING",
+        "BET AT",
+        "FINISH",
+        "SCOTTSVILLE",
+        "TURFFONTEIN",
+        "DURBANVILLE",
+        "GREYVILLE",
+        "FAIRVIEW",
+        "INSIDE TRACK",
+        "OUTSIDE TRACK",
+        "STANDSIDE TRACK",
+        "POLYTRACK",
+        "TURF TRACK",
+    )
+    if upper.startswith(noisy_starts):
+        return ""
+    tokens = line.split()
+    distance_count = 0
+    while distance_count < len(tokens) and re.fullmatch(r"\d{3,4}m", tokens[distance_count]):
+        distance_count += 1
+    if distance_count:
+        rest = " ".join(tokens[distance_count:])
+        if not rest:
+            return ""
+        if rest.lower().startswith("run-in"):
+            return f"{tokens[distance_count - 1]} {rest}"
+        if rest[:1].islower() or rest.lower().startswith(("track ", "draw:", "all ", "races ", "straight", "clockwise")):
+            return rest
+        return ""
+    return line
+
+
+def clean_track_notes(value: str) -> str:
+    lines = [clean_track_note_line(line) for line in value.splitlines()]
+    text = clean_text(" ".join(line for line in lines if line))
+    text = normalize_track_direction(text)
+    text = re.sub(r"\b(\d{3,4}m)\s+of slightly", r"of slightly", text, flags=re.I)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
 def split_allowance(weight: str) -> tuple[str, str]:
     weight = clean_text(weight)
     if "-" not in weight:
@@ -294,8 +342,9 @@ def extract_meeting(data: dict[str, Any], pages: list[dict[str, Any]]) -> None:
     if day:
         data["meeting"]["day"] = day.title()
 
-    track_notes = first_match(r"((?:Poly|Turf)\..*?DRAW:.*?)(?:\nALPHABETICAL INDEX|$)", meeting_text, 1, flags=re.I | re.S)
-    if track_notes:
+    track_match = re.search(r"((?:Poly|Turf)\..*?DRAW:.*?)(?:\nALPHABETICAL INDEX|$)", meeting_text, re.I | re.S)
+    if track_match:
+        track_notes = clean_track_notes(track_match.group(1))
         data["meeting"]["track_notes"] = track_notes
         direction = first_match(r"All races ([^.]+?round turn)", track_notes)
         if not direction:
@@ -999,7 +1048,7 @@ def is_time_token(token: str) -> bool:
 
 
 def is_shoes_headgear_token(token: str) -> bool:
-    return bool(re.fullmatch(r"[AB]{1,2}t?|[ABH]", token))
+    return bool(re.fullmatch(r"[AB]{1,2}[A-Z]?t?|H", token))
 
 
 def split_embedded_winner_weight(token: str) -> tuple[str, str] | None:
